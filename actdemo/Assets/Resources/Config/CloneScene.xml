@@ -1,0 +1,48 @@
+<!-- 被2011 rel. 2 sp1 (huanghao) 使用XMLSpy vhuanghao编辑的 (http://www.altova.com) by -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!--
+  CloneSceneId - 副本Id
+  
+  MonsterId - 怪物Id
+  MonsterPosition - 怪物位置
+  MonsterRotationY - 怪物旋转
+  MonsterScale - 怪物缩放
+-->
+<CloneScene>
+	<Property CloneSceneId="1">
+		<CloneSceneMonsterInfo MonsterId="120010" MonsterPosition="-47.04472,2.075056,-31.11448" MonsterRotationY="-179.3714" MonsterScale="1.0"/>
+		<CloneSceneMonsterInfo MonsterId="120006" MonsterPosition="-51.34569, 2.075056, -30.54692" MonsterRotationY="180" MonsterScale="1.1"/>
+		<CloneSceneMonsterInfo MonsterId="120006" MonsterPosition="-45.01409, 2.075056, -36.81345" MonsterRotationY="-110" MonsterScale="1.1"/>
+		<CloneSceneMonsterInfo MonsterId="120008" MonsterPosition="-46.90228, 2.075056, -25.22013" MonsterRotationY="130" MonsterScale="1.1"/>
+		<CloneSceneMonsterInfo MonsterId="120008" MonsterPosition="-39.41314,2.075056, -32.43316" MonsterRotationY="-135" MonsterScale="1.1"/>
+		<CloneSceneMonsterInfo MonsterId="120009" MonsterPosition="-27.33135, 0.6055484, -62.39384" MonsterRotationY="-90" MonsterScale="0.95"/>
+		<CloneSceneMonsterInfo MonsterId="120006" MonsterPosition="-32.24441, 0.6055483, -61.29636" MonsterRotationY="-41.00003" MonsterScale="1.1"/>
+		<CloneSceneMonsterInfo MonsterId="120006" MonsterPosition="-26.09569, 0.5780142, -57.14069" MonsterRotationY="-90" MonsterScale="1.1"/>
+		<CloneSceneMonsterInfo MonsterId="120008" MonsterPosition="-20.64223, 0.6055486, -65.28635" MonsterRotationY="-90" MonsterScale="1.1"/>
+		<CloneSceneMonsterInfo MonsterId="120009" MonsterPosition="-52.13174, 0.6189046, -3.845262" MonsterRotationY="180" MonsterScale="0.95"/>
+		<CloneSceneMonsterInfo MonsterId="120007" MonsterPosition="-55.34736, 0.5890197, -0.1902824" MonsterRotationY="180" MonsterScale="1.1"/>
+		<CloneSceneMonsterInfo MonsterId="120007" MonsterPosition="-47.65014, 0.5734993, -2.922045" MonsterRotationY="180" MonsterScale="1.1"/>
+		<CloneSceneMonsterInfo MonsterId="120011" MonsterPosition="-63.0072,-1.405876,72.64214" MonsterRotationY="180" MonsterScale="1.1"/>
+		<CloneSceneMonsterInfo MonsterId="120007" MonsterPosition="-66.37246, -1.37809, 69.15453" MonsterRotationY="180" MonsterScale="1.1"/>
+		<CloneSceneMonsterInfo MonsterId="120007" MonsterPosition="-60.13192, -1.394452, 69.17198" MonsterRotationY="180" MonsterScale="1.1"/>
+		<CloneSceneMonsterInfo MonsterId="120008" MonsterPosition="-68.32172, -1.415397, 78.23486" MonsterRotationY="180" MonsterScale="1.1"/>
+		<CloneSceneMonsterInfo MonsterId="120008" MonsterPosition="-55.55,-1.422472, 77.37991" MonsterRotationY="180" MonsterScale="1.1"/>
+		<!--测试NPC
+		<CloneSceneMonsterInfo MonsterId="120006" MonsterPosition="-89.49863,4.726187, -79.01299" MonsterRotationY="-180" MonsterScale="1.1"/>
+		-->
+	</Property>
+	<Property CloneSceneId="2">
+		<CloneSceneMonsterInfo MonsterId="120006" MonsterPosition="1.0, 1.0, 1.0" MonsterRotationY="45.0" MonsterScale="1.0"/>
+		<CloneSceneMonsterInfo MonsterId="100002" MonsterPosition="2.0, 1.0, 2.0" MonsterRotationY="45.0" MonsterScale="1.0"/>
+	</Property>
+</CloneScene>

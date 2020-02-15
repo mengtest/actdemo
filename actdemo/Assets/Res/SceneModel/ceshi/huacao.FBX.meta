@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 09624e3b564ff2040b1d776d979fa9b9
+timeCreated: 1448451139
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: byg_plant_frutex001
+    100002: byg_plant_grass001
+    100004: byg_plant_grass002
+    100006: hfs_plant_grass001
+    100008: hfs_plant_grass002
+    100010: hfs_plant_tree013
+    100012: hfs_plant_tree016
+    100014: //RootNode
+    100016: lhd_plant_frutex002
+    100018: lhd_plant_frutex003
+    100020: ngg_plant_frutex001
+    100022: ngg_plant_frutex002
+    100024: pds_plant_grass_001
+    100026: pds_plant_grass_002
+    100028: ppd_plant_frutex001
+    400000: byg_plant_frutex001
+    400002: byg_plant_grass001
+    400004: byg_plant_grass002
+    400006: hfs_plant_grass001
+    400008: hfs_plant_grass002
+    400010: hfs_plant_tree013
+    400012: hfs_plant_tree016
+    400014: //RootNode
+    400016: lhd_plant_frutex002
+    400018: lhd_plant_frutex003
+    400020: ngg_plant_frutex001
+    400022: ngg_plant_frutex002
+    400024: pds_plant_grass_001
+    400026: pds_plant_grass_002
+    400028: ppd_plant_frutex001
+    2300000: byg_plant_frutex001
+    2300002: byg_plant_grass001
+    2300004: byg_plant_grass002
+    2300006: hfs_plant_grass001
+    2300008: hfs_plant_grass002
+    2300010: hfs_plant_tree013
+    2300012: hfs_plant_tree016
+    2300014: lhd_plant_frutex002
+    2300016: lhd_plant_frutex003
+    2300018: ngg_plant_frutex001
+    2300020: ngg_plant_frutex002
+    2300022: pds_plant_grass_001
+    2300024: pds_plant_grass_002
+    2300026: ppd_plant_frutex001
+    3300000: byg_plant_frutex001
+    3300002: byg_plant_grass001
+    3300004: byg_plant_grass002
+    3300006: hfs_plant_grass001
+    3300008: hfs_plant_grass002
+    3300010: hfs_plant_tree013
+    3300012: hfs_plant_tree016
+    3300014: lhd_plant_frutex002
+    3300016: lhd_plant_frutex003
+    3300018: ngg_plant_frutex001
+    3300020: ngg_plant_frutex002
+    3300022: pds_plant_grass_001
+    3300024: pds_plant_grass_002
+    3300026: ppd_plant_frutex001
+    4300000: byg_plant_frutex001
+    4300002: byg_plant_grass001
+    4300004: pds_plant_grass_002
+    4300006: hfs_plant_grass001
+    4300008: hfs_plant_grass002
+    4300010: hfs_plant_tree016
+    4300012: hfs_plant_tree013
+    4300014: lhd_plant_frutex002
+    4300016: lhd_plant_frutex003
+    4300018: ppd_plant_frutex001
+    4300020: pds_plant_grass_001
+    4300022: byg_plant_grass002
+    4300024: ngg_plant_frutex001
+    4300026: ngg_plant_frutex002
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

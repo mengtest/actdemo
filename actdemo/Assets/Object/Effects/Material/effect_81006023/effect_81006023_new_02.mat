@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: effect_81006023_new_02
+  m_Shader: {fileID: 4800000, guid: fcb51a83d01dea64e9a70b0eb62a3474, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _DetailTex:
+        m_Texture: {fileID: 2800000, guid: 013147c1f1ce8d64094d1f8896a34fa7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailTexAlphaChannel:
+        m_Texture: {fileID: 2800000, guid: cab6dd8e2efe3ef4489cc5b0a36fb2d0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: b77c4e0929c18dc408a49563a502b60d, type: 3}
+        m_Scale: {x: 1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTexAlphaChannel:
+        m_Texture: {fileID: 2800000, guid: ec59d1d78402602458da0dc439975281, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _MMultiplier: 7.68
+    - _Scroll2X: 0
+    - _Scroll2Y: 0
+    - _ScrollX: 0
+    - _ScrollY: 0
+    - _SineAmplX: 0
+    - _SineAmplX2: 0
+    - _SineAmplY: 0
+    - _SineAmplY2: 0
+    - _SineFreqX: 0
+    - _SineFreqX2: 0
+    - _SineFreqY: 0
+    - _SineFreqY2: 0
+    m_Colors:
+    - _Color: {r: 1, g: 0.33088237, b: 0.87079084, a: 1}
+    - _TintColor: {r: 0.61764705, g: 0.41769478, b: 0.23615918, a: 0.5019608}

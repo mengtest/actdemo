@@ -1,0 +1,260 @@
+fileFormatVersion: 2
+guid: 72ee5ff5781571d419a8f15a7d91fb00
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bip01
+    100004: Bip01 Head
+    100006: Bip01 L Calf
+    100008: Bip01 L Clavicle
+    100010: Bip01 L Finger0
+    100012: Bip01 L Finger01
+    100014: Bip01 L Finger1
+    100016: Bip01 L Finger11
+    100018: Bip01 L Foot
+    100020: Bip01 L Forearm
+    100022: Bip01 L Hand
+    100024: Bip01 L Thigh
+    100026: Bip01 L Toe0
+    100028: Bip01 L UpperArm
+    100030: Bip01 Neck
+    100032: Bip01 Pelvis
+    100034: Bip01 Prop1
+    100036: Bip01 R Calf
+    100038: Bip01 R Clavicle
+    100040: Bip01 R Finger0
+    100042: Bip01 R Finger01
+    100044: Bip01 R Finger1
+    100046: Bip01 R Finger11
+    100048: Bip01 R Foot
+    100050: Bip01 R Forearm
+    100052: Bip01 R Hand
+    100054: Bip01 R Thigh
+    100056: Bip01 R Toe0
+    100058: Bip01 R UpperArm
+    100060: Bip01 Spine
+    100062: Bip01 Spine1
+    100064: bone00
+    100066: bone01
+    100068: bone02
+    100070: bone03
+    100072: bone04
+    100074: bone05
+    100076: bone06
+    100078: bone07
+    100080: bone08
+    100082: bone09
+    100084: bone10
+    100086: bone11
+    100088: bone12
+    100090: bone13
+    100092: bone14
+    100094: bone15
+    100096: bone16
+    100098: bone17
+    100100: bone18
+    100102: bone19
+    100104: bone20
+    100106: bone21
+    100108: bone22
+    100110: bone23
+    100112: bone24
+    100114: bone25
+    100116: bone26
+    100118: bone27
+    100120: bone28
+    100122: bone29
+    100124: bone30
+    100126: bone31
+    100128: bone32
+    100130: bone33
+    100132: bone34
+    100134: bone35
+    100136: bone36
+    100138: bone37
+    100140: bone38
+    100142: bone39
+    100144: bone40
+    100146: bone41
+    100148: bone42
+    100150: bone43
+    100152: hero_214
+    100154: hero_214_1
+    400000: //RootNode
+    400002: Bip01
+    400004: Bip01 Head
+    400006: Bip01 L Calf
+    400008: Bip01 L Clavicle
+    400010: Bip01 L Finger0
+    400012: Bip01 L Finger01
+    400014: Bip01 L Finger1
+    400016: Bip01 L Finger11
+    400018: Bip01 L Foot
+    400020: Bip01 L Forearm
+    400022: Bip01 L Hand
+    400024: Bip01 L Thigh
+    400026: Bip01 L Toe0
+    400028: Bip01 L UpperArm
+    400030: Bip01 Neck
+    400032: Bip01 Pelvis
+    400034: Bip01 Prop1
+    400036: Bip01 R Calf
+    400038: Bip01 R Clavicle
+    400040: Bip01 R Finger0
+    400042: Bip01 R Finger01
+    400044: Bip01 R Finger1
+    400046: Bip01 R Finger11
+    400048: Bip01 R Foot
+    400050: Bip01 R Forearm
+    400052: Bip01 R Hand
+    400054: Bip01 R Thigh
+    400056: Bip01 R Toe0
+    400058: Bip01 R UpperArm
+    400060: Bip01 Spine
+    400062: Bip01 Spine1
+    400064: bone00
+    400066: bone01
+    400068: bone02
+    400070: bone03
+    400072: bone04
+    400074: bone05
+    400076: bone06
+    400078: bone07
+    400080: bone08
+    400082: bone09
+    400084: bone10
+    400086: bone11
+    400088: bone12
+    400090: bone13
+    400092: bone14
+    400094: bone15
+    400096: bone16
+    400098: bone17
+    400100: bone18
+    400102: bone19
+    400104: bone20
+    400106: bone21
+    400108: bone22
+    400110: bone23
+    400112: bone24
+    400114: bone25
+    400116: bone26
+    400118: bone27
+    400120: bone28
+    400122: bone29
+    400124: bone30
+    400126: bone31
+    400128: bone32
+    400130: bone33
+    400132: bone34
+    400134: bone35
+    400136: bone36
+    400138: bone37
+    400140: bone38
+    400142: bone39
+    400144: bone40
+    400146: bone41
+    400148: bone42
+    400150: bone43
+    400152: hero_214
+    400154: hero_214_1
+    4300000: hero_214
+    4300002: hero_214_1
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: hero_214
+    13700002: hero_214_1
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #0'
+    second: {fileID: 2100000, guid: 029a47cbb66ef9f42b27d7a450bb7689, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hero_214
+    second: {fileID: 2100000, guid: 91d22ee43a4762c4f91fa552b7ac71b4, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Bip01
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

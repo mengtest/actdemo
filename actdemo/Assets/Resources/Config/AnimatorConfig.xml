@@ -1,0 +1,206 @@
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!--
+No 				- 技能编号  
+Model 			- 模型编号 
+Action 			- 动作编号（0普通攻击，1~4技能1~4）
+ActionNumber 	- 事件帧序列号 
+PauseTime 		- 硬直时间
+TargetType 		- 技能目标
+1.自己
+2.敌人
+3.队友
+4.中立
+5.建筑
+DamageStatus 	- 技能释放时状态
+0.瞬时 
+1.运动判定撞击 
+2.运动判定穿刺
+
+CenterOffset 	- 参照坐标（x,y)
+SkillRangeType 	- 技能范围
+1.圆形-半径 
+2.扇形-半径-角度 
+3.矩形-长度-宽度-朝向（1正，-1反）
+
+SkillType - 技能效果
+SkillType_Damage = 1,           // 伤害型
+SkillType_Dot = 2,              // 持续伤害型
+SkillType_Restore = 3,          // 恢复型
+SkillType_Deceleration = 4,     // 减速
+SkillType_Vertigo = 5,          // 眩晕
+SkillType_Repel = 6,            // 击退
+SkillType_BlowUp = 7,           // 击飞
+SkillType_Close = 8,            // 拉近距离
+SkillType_Devour = 9,           // 吞噬
+SkillType_Blindness = 10,       // 致盲
+SkillType_Deformation = 11,     // 变形
+
+HurtEffect 		- 受击特效
+buff:
+1.流血-时间-伤害 
+2.中毒-时间-伤害  
+3.物理攻击增加（百分比）-时间-加成百分比 
+buffid:关联的BUFF效果编号
+
+HurtDir - 受击动作  
+1.向上 
+2.中间 
+3.向左
+4.向右
+
+CameraShakeNumber - 震屏次数
+CameraShakeDistance - 震屏幅度
+CameraShakeSpeed - 震屏速度
+
+RepelType - 击飞朝向
+0.点对点击飞
+1.按主角朝向击飞
+
+ShakeDecay - 震屏衰减速度
+RotationX - 震屏离心距离
+
+TopplebackType - 倒地受击类型
+0.无地面受击  
+1.地面受击小  
+2.地面受击大
+-->
+<animatorconfig>
+	<Property No="600000" Model="100003" Action="0">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="6" SkillTypeParams="10,0.5" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="6" SkillTypeParams="10,0.5" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="3" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="6" SkillTypeParams="10,0.5" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="3" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="4" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="6" SkillTypeParams="10,0.5" RepelType="1" damageNumber="1.5" PauseTime="1.4" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="4" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="600001" Model="100003" Action="1">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="6" SkillTypeParams="20,2" RepelType="1" damageNumber="1.8" PauseTime="1.5" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="5,160" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="600002" Model="100003" Action="2">
+		<Action ActionNumber="1" TargetType="2" DamageStatus="1" SkillType="1" SkillTypeParams="" RepelType="" PauseTime="1" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="6,2" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="3" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="1" RepelType="0" PauseTime="0" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="600003" Model="100003">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="1" RepelType="0" PauseTime="0" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="" PauseTime="0.2" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="600004" Model="100003" Action="4">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="" SkillTypeParams="" RepelType="" PauseTime="" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="3,150" HurtEffect="900013" buff="3,5,0.5" buffid="700001" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="" PauseTime="1.2" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="3,150" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="3" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="" PauseTime="1.2" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="3,150" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="3" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="4" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="" PauseTime="0.5" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="4" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="5" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="" PauseTime="0.5" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="3" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="6" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="" PauseTime="0.5" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="7" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="" PauseTime="0.5" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="8" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="" PauseTime="0.5" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="3" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="9" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="2" RepelType="1" PauseTime="0.5" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="4" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="600005" Model="100008" Action="0">
+		<Action ActionNumber="1" TargetType="2" DamageStatus="0" SkillType="6" SkillTypeParams="30,0.3" RepelType="1" PauseTime="0" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,4,1" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="4" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.1" TopplebackType="0" SkillReleaseType="1"/>
+		<Action ActionNumber="2" TargetType="2" DamageStatus="0" SkillType="6" SkillTypeParams="30,0.4" RepelType="1" PauseTime="0" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,4,1" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="3" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.1" TopplebackType="0" SkillReleaseType="1"/>
+		<Action ActionNumber="3" TargetType="2" DamageStatus="0" SkillType="6" SkillTypeParams="40,0.7" RepelType="1" PauseTime="0.2" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,4,1" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.1" TopplebackType="0" SkillReleaseType="1"/>
+		<Action ActionNumber="4" TargetType="2" DamageStatus="0" SkillType="6" SkillTypeParams="40,0.4" RepelType="1" PauseTime="0.2" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,4,1" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.1" TopplebackType="2" SkillReleaseType="1"/>
+		<Action ActionNumber="5" TargetType="2" DamageStatus="0" SkillType="6" SkillTypeParams="30,0.4" RepelType="1" PauseTime="0.2" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="5,5,1" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.1" TopplebackType="0" SkillReleaseType="1"/>
+		<Action ActionNumber="6" TargetType="2" DamageStatus="0" SkillType="7" SkillTypeParams="1" RepelType="1" PauseTime="0" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="5,5,1" HurtEffect="900037" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="3" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.5" TopplebackType="2" SkillReleaseType="1"/>
+	</Property>
+	<Property No="600006" Model="100008" Action="1">
+		<Action ActionNumber="1" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.05" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="7,270" HurtEffect="900013" buffid="" mAttackerPauseTime="0.01" HurtDir="1" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.15" TopplebackType="0" SkillReleaseType="1"/>
+		<Action ActionNumber="2" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.05" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="7,270" HurtEffect="900013" buffid="" mAttackerPauseTime="0.01" HurtDir="2" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.15" TopplebackType="0" SkillReleaseType="1"/>
+		<Action ActionNumber="3" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.05" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="7,270" HurtEffect="900013" buffid="" mAttackerPauseTime="0.01" HurtDir="3" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.15" TopplebackType="0" SkillReleaseType="1"/>
+		<Action ActionNumber="4" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.05" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="7,270" HurtEffect="900013" buffid="" mAttackerPauseTime="0.01" HurtDir="4" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.15" TopplebackType="0" SkillReleaseType="1"/>
+		<Action ActionNumber="5" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.05" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="7,270" HurtEffect="900013" buffid="" mAttackerPauseTime="0.01" HurtDir="1" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.15" TopplebackType="0" SkillReleaseType="1"/>
+		<Action ActionNumber="6" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.05" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="7,270" HurtEffect="900013" buffid="" mAttackerPauseTime="0.01" HurtDir="2" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.15" TopplebackType="0" SkillReleaseType="1"/>
+		<Action ActionNumber="7" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.05" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="7,270" HurtEffect="900013" buffid="" mAttackerPauseTime="0.01" HurtDir="3" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.15" TopplebackType="0" SkillReleaseType="1"/>
+		<Action ActionNumber="8" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.05" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="7,270" HurtEffect="900013" buffid="" mAttackerPauseTime="0.01" HurtDir="4" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.15" TopplebackType="1" SkillReleaseType="1"/>
+		<Action ActionNumber="9" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.05" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="7,270" HurtEffect="900013" buffid="" mAttackerPauseTime="0.01" HurtDir="1" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.15" TopplebackType="1" SkillReleaseType="1"/>
+		<Action ActionNumber="10" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.2" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="7,270" HurtEffect="900013" buffid="" mAttackerPauseTime="0.01" HurtDir="1" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.15" TopplebackType="1" SkillReleaseType="1"/>
+		<Action ActionNumber="11" TargetType="2" DamageStatus="0" SkillType="6" SkillTypeParams="20,2.5" RepelType="1" PauseTime="0.2" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="7,270" HurtEffect="900013" buffid="" mAttackerPauseTime="0.01" HurtDir="1" CameraShakeNumber="2" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.5" TopplebackType="1" SkillReleaseType="1"/>
+	</Property>
+	<Property No="600007" Model="100008" Action="2">
+		<Action ActionNumber="1" TargetType="2" DamageStatus="1" SkillType="1" SkillTypeParams="" RepelType="" PauseTime="1" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="6,2" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0" SkillReleaseType="1"/>
+		<Action ActionNumber="2" TargetType="2" DamageStatus="0" SkillType="7" SkillTypeParams="1" RepelType="1" PauseTime="0" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="2" SkillReleaseType="1"/>
+	</Property>
+	<Property No="600008" Model="100008" Action="3">
+		<Action ActionNumber="1" TargetType="2" DamageStatus="0" SkillType="7" SkillTypeParams="3" RepelType="0" PauseTime="0" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="7" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0" SkillReleaseType="1"/>
+		<Action ActionNumber="2" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="0" PauseTime="0.2" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="7" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="3" CameraShakeNumber="2" CameraShakeDistance="0.08" CameraShakeSpeed="80" ShakeDecay="0" RotationX="0.3" TopplebackType="2" SkillReleaseType="1"/>
+		<Action ActionNumber="3" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="0" PauseTime="0.05" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="7" HurtEffect="900013" buffid="" mAttackerPauseTime="0.01" HurtDir="1" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.1" TopplebackType="1" SkillReleaseType="1"/>
+		<Action ActionNumber="4" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="0" PauseTime="0.05" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="7" HurtEffect="900013" buffid="" mAttackerPauseTime="0.01" HurtDir="1" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.1" TopplebackType="1" SkillReleaseType="1"/>
+		<Action ActionNumber="5" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="0" PauseTime="0.05" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="7" HurtEffect="900013" buffid="" mAttackerPauseTime="0.01" HurtDir="1" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.1" TopplebackType="1" SkillReleaseType="1"/>
+		<Action ActionNumber="6" TargetType="2" DamageStatus="0" SkillType="7" SkillTypeParams="2" RepelType="0" PauseTime="0.2" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="7" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="3" CameraShakeNumber="5" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="1.6" TopplebackType="2" SkillReleaseType="1"/>
+	</Property>
+	<Property No="600009" Model="100008" Action="4">
+		<Action ActionNumber="1" TargetType="2" DamageStatus="2" SkillType="7" SkillTypeParams="3" RepelType="1" PauseTime="0" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="10,10,1" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="3" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.5" TopplebackType="1" SkillReleaseType="1"/>
+		<Action ActionNumber="2" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.2" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="10" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.1" TopplebackType="1" SkillReleaseType="1"/>
+		<Action ActionNumber="3" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.2" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="10" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="3" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.1" TopplebackType="1" SkillReleaseType="1"/>
+		<Action ActionNumber="4" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.116666667" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="10" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="4" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.1" TopplebackType="1" SkillReleaseType="1"/>
+		<Action ActionNumber="5" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.116666667" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="10" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="3" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.1" TopplebackType="1" SkillReleaseType="1"/>
+		<Action ActionNumber="6" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.116666667" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="10" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.1" TopplebackType="1" SkillReleaseType="1"/>
+		<Action ActionNumber="7" TargetType="2" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.116666667" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="10" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.1" TopplebackType="1" SkillReleaseType="1"/>
+		<Action ActionNumber="8" TargetType="2" DamageStatus="0" SkillType="6" SkillTypeParams="20,2" RepelType="1" PauseTime="0.116666667" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="10" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="3" CameraShakeNumber="1" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.1" TopplebackType="1" SkillReleaseType="1"/>
+		<Action ActionNumber="9" TargetType="2" DamageStatus="1" SkillType="1" SkillTypeParams="" RepelType="1" damageNumber="1.8" PauseTime="0.116666667" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="10" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="4" CameraShakeNumber="0" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="0.7" TopplebackType="1" SkillReleaseType="1"/>
+		<Action ActionNumber="10" TargetType="2" DamageStatus="0" SkillType="7" SkillTypeParams="2" RepelType="0" damageNumber="1.8" PauseTime="0.116666667" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="10" HurtEffect="900013" buffid="" mAttackerPauseTime="0" HurtDir="4" CameraShakeNumber="5" CameraShakeDistance="0.001" CameraShakeSpeed="50" ShakeDecay="0.5" RotationX="1.6" TopplebackType="2" SkillReleaseType="1"/>
+	</Property>
+	<Property No="610000" Model="120001" Action="0">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="6" SkillTypeParams="10,0.5" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="6" SkillTypeParams="10,0.5" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="4" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="610001" Model="120002" Action="0">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="6" SkillTypeParams="10,0.5" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="6" SkillTypeParams="10,0.5" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="3" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="610002" Model="120003" Action="0">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="6" SkillTypeParams="10,0.5" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="6" SkillTypeParams="10,0.5" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="610003" Model="120004" Action="0">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="6" SkillTypeParams="10,0.5" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="3" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="6" SkillTypeParams="10,0.5" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="4" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="610004" Model="120005" Action="0">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="6" SkillTypeParams="10,0.5" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="6" SkillTypeParams="10,0.5" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="600010" Model="120006" Action="0">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="600011" Model="120007" Action="0">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0" CenterOffset="0.0,0.0,0.0" SkillRangeType="2" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="2" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="600012" Model="120008" Action="0">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="2" SkillFlyRes="900034" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0" CenterOffset="0.0,0.0,0.0" SkillRangeType="2" SkillRangeTypeParams="12,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="2" SkillFlyRes="900034" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="2" SkillRangeTypeParams="12,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="600013" Model="120009" Action="0">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="600014" Model="120010" Action="0">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="600015" Model="120010" Action="0">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="600016" Model="120011" Action="0">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="600017" Model="120011" Action="0">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="600018" Model="120010" Action="0">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+	<Property No="600019" Model="120011" Action="0">
+		<Action ActionNumber="1" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="1" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+		<Action ActionNumber="2" TargetType="2" SkillReleaseType="1" DamageStatus="0" SkillType="1" SkillTypeParams="" RepelType="1" PauseTime="0.7" CenterOffset="0.0,0.0,0.0" SkillRangeType="3" SkillRangeTypeParams="4,150" HurtEffect="" buffid="" mAttackerPauseTime="0" HurtDir="2" CameraShakeNumber="0" CameraShakeDistance="0" CameraShakeSpeed="0" ShakeDecay="0" RotationX="0" TopplebackType="0"/>
+	</Property>
+</animatorconfig>

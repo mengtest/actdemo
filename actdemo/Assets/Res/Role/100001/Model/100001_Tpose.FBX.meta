@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: b6a48b9ab56edc2469ea87d2ec3b5211
+timeCreated: 1448411817
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bip01
+    100004: Bip01 Head
+    100006: Bip01 HeadNub
+    100008: Bip01 L Calf
+    100010: Bip01 L Clavicle
+    100012: Bip01 L Finger0
+    100014: Bip01 L Finger01
+    100016: Bip01 L Finger0Nub
+    100018: Bip01 L Finger1
+    100020: Bip01 L Finger11
+    100022: Bip01 L Finger1Nub
+    100024: Bip01 L Foot
+    100026: Bip01 L Forearm
+    100028: Bip01 L Hand
+    100030: Bip01 L HorseLink
+    100032: Bip01 L Thigh
+    100034: Bip01 L Toe0
+    100036: Bip01 L Toe0Nub
+    100038: Bip01 L UpperArm
+    100040: Bip01 Neck
+    100042: Bip01 Pelvis
+    100044: Bip01 Prop1
+    100046: Bip01 R Calf
+    100048: Bip01 R Clavicle
+    100050: Bip01 R Finger0
+    100052: Bip01 R Finger01
+    100054: Bip01 R Finger0Nub
+    100056: Bip01 R Finger1
+    100058: Bip01 R Finger11
+    100060: Bip01 R Finger1Nub
+    100062: Bip01 R Foot
+    100064: Bip01 R Forearm
+    100066: Bip01 R Hand
+    100068: Bip01 R HorseLink
+    100070: Bip01 R Thigh
+    100072: Bip01 R Toe0
+    100074: Bip01 R Toe0Nub
+    100076: Bip01 R UpperArm
+    100078: Bip01 Spine
+    100080: Bip01 Spine1
+    100082: Bone01
+    100084: Bone02
+    100086: Bone03
+    100088: Bone05
+    100090: Bone06
+    100092: Bone07
+    100094: bone23
+    100096: bone24
+    100098: bone25
+    100100: bone27
+    100102: bone28
+    100104: bone29
+    100106: bone31
+    100108: bone32
+    100110: bone33
+    100112: bone34
+    100114: hero_008
+    100116: hero_008_01
+    100118: hero_008_ankleL_01
+    100120: hero_008_ankleR_01
+    100122: hero_008_back_01
+    100124: hero_008_body_01
+    100126: hero_008_body_02
+    100128: hero_008_footL_01
+    100130: hero_008_footR_01
+    100132: hero_008_handL_01
+    100134: hero_008_handR_01
+    100136: hero_008_head_01
+    100138: hero_008_head_buff01
+    100140: hero_008_hornL_01
+    100142: hero_008_hornR_01
+    100144: hero_008_weapon_01
+    100146: Point01
+    400000: //RootNode
+    400002: Bip01
+    400004: Bip01 Head
+    400006: Bip01 HeadNub
+    400008: Bip01 L Calf
+    400010: Bip01 L Clavicle
+    400012: Bip01 L Finger0
+    400014: Bip01 L Finger01
+    400016: Bip01 L Finger0Nub
+    400018: Bip01 L Finger1
+    400020: Bip01 L Finger11
+    400022: Bip01 L Finger1Nub
+    400024: Bip01 L Foot
+    400026: Bip01 L Forearm
+    400028: Bip01 L Hand
+    400030: Bip01 L HorseLink
+    400032: Bip01 L Thigh
+    400034: Bip01 L Toe0
+    400036: Bip01 L Toe0Nub
+    400038: Bip01 L UpperArm
+    400040: Bip01 Neck
+    400042: Bip01 Pelvis
+    400044: Bip01 Prop1
+    400046: Bip01 R Calf
+    400048: Bip01 R Clavicle
+    400050: Bip01 R Finger0
+    400052: Bip01 R Finger01
+    400054: Bip01 R Finger0Nub
+    400056: Bip01 R Finger1
+    400058: Bip01 R Finger11
+    400060: Bip01 R Finger1Nub
+    400062: Bip01 R Foot
+    400064: Bip01 R Forearm
+    400066: Bip01 R Hand
+    400068: Bip01 R HorseLink
+    400070: Bip01 R Thigh
+    400072: Bip01 R Toe0
+    400074: Bip01 R Toe0Nub
+    400076: Bip01 R UpperArm
+    400078: Bip01 Spine
+    400080: Bip01 Spine1
+    400082: Bone01
+    400084: Bone02
+    400086: Bone03
+    400088: Bone05
+    400090: Bone06
+    400092: Bone07
+    400094: bone23
+    400096: bone24
+    400098: bone25
+    400100: bone27
+    400102: bone28
+    400104: bone29
+    400106: bone31
+    400108: bone32
+    400110: bone33
+    400112: bone34
+    400114: hero_008
+    400116: hero_008_01
+    400118: hero_008_ankleL_01
+    400120: hero_008_ankleR_01
+    400122: hero_008_back_01
+    400124: hero_008_body_01
+    400126: hero_008_body_02
+    400128: hero_008_footL_01
+    400130: hero_008_footR_01
+    400132: hero_008_handL_01
+    400134: hero_008_handR_01
+    400136: hero_008_head_01
+    400138: hero_008_head_buff01
+    400140: hero_008_hornL_01
+    400142: hero_008_hornR_01
+    400144: hero_008_weapon_01
+    400146: Point01
+    4300000: hero_008
+    4300002: hero_008_01
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: hero_008
+    13700002: hero_008_01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: Bip01
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

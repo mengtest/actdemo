@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: 95b63c658e88e1d4eaa99483b37cadc4
+timeCreated: 1449045831
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: hfl_building_room004
+    100002: hyd_thing_misc006a
+    100004: hyd_thing_misc006a001
+    100006: Object050
+    100008: Object051
+    100010: Object052
+    100012: Object053
+    100014: Object054
+    100016: Object055
+    100018: //RootNode
+    100020: "\u5BF9\u8C61010"
+    100022: "\u5BF9\u8C61013"
+    100024: "\u5BF9\u8C61019"
+    100026: 010
+    100028: 013
+    100030: 019
+    100032: Object056
+    400000: hfl_building_room004
+    400002: hyd_thing_misc006a
+    400004: hyd_thing_misc006a001
+    400006: Object050
+    400008: Object051
+    400010: Object052
+    400012: Object053
+    400014: Object054
+    400016: Object055
+    400018: //RootNode
+    400020: "\u5BF9\u8C61010"
+    400022: "\u5BF9\u8C61013"
+    400024: "\u5BF9\u8C61019"
+    400026: 010
+    400028: 013
+    400030: 019
+    400032: Object056
+    2300000: hfl_building_room004
+    2300002: hyd_thing_misc006a
+    2300004: hyd_thing_misc006a001
+    2300006: Object050
+    2300008: Object051
+    2300010: Object052
+    2300012: Object053
+    2300014: Object054
+    2300016: Object055
+    2300018: "\u5BF9\u8C61010"
+    2300020: "\u5BF9\u8C61013"
+    2300022: "\u5BF9\u8C61019"
+    2300024: 010
+    2300026: 013
+    2300028: 019
+    2300030: Object056
+    3300000: hfl_building_room004
+    3300002: hyd_thing_misc006a
+    3300004: hyd_thing_misc006a001
+    3300006: Object050
+    3300008: Object051
+    3300010: Object052
+    3300012: Object053
+    3300014: Object054
+    3300016: Object055
+    3300018: "\u5BF9\u8C61010"
+    3300020: "\u5BF9\u8C61013"
+    3300022: "\u5BF9\u8C61019"
+    3300024: 010
+    3300026: 013
+    3300028: 019
+    3300030: Object056
+    4300000: hyd_thing_misc006a
+    4300002: hyd_thing_misc006a001
+    4300004: hfl_building_room004
+    4300006: "\u5BF9\u8C61010"
+    4300008: "\u5BF9\u8C61013"
+    4300010: "\u5BF9\u8C61019"
+    4300012: Object050
+    4300014: Object051
+    4300016: Object052
+    4300018: Object053
+    4300020: Object054
+    4300022: Object055
+    4300024: 010
+    4300026: 013
+    4300028: 019
+    4300030: Object056
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

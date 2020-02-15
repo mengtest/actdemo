@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: TerrainDemo
+  m_Shader: {fileID: 4800000, guid: 978d6ad065dd7134b9d2494138db6ded, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AOMap:
+        m_Texture: {fileID: 2800000, guid: 3ed6b2ebfc843d146be2979fe6bf621b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Diffuse01:
+        m_Texture: {fileID: 2800000, guid: fc45551c8c29f814aa9ed6917194a284, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Diffuse02:
+        m_Texture: {fileID: 2800000, guid: a9cd4879a230fbc4bae3e1f1463c66d5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Diffuse03:
+        m_Texture: {fileID: 2800000, guid: e1f7fdbcd92f264428d3114db0bf0e3e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Diffuse04:
+        m_Texture: {fileID: 2800000, guid: a9cd4879a230fbc4bae3e1f1463c66d5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MacroNormal:
+        m_Texture: {fileID: 2800000, guid: 5a11ec8b0d1d70843ba196bcc3b63d5c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Masks:
+        m_Texture: {fileID: 2800000, guid: 7e2f50e5d3609dd4cb0039c4fd07678c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: 5a11ec8b0d1d70843ba196bcc3b63d5c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal01:
+        m_Texture: {fileID: 2800000, guid: 8d43297e811817046851727bf63c969f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal02:
+        m_Texture: {fileID: 2800000, guid: f7270921ac9c73c44a675584938ebbd4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal03:
+        m_Texture: {fileID: 2800000, guid: f7270921ac9c73c44a675584938ebbd4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal04:
+        m_Texture: {fileID: 2800000, guid: fc40609d7076a3c49884ec9bf388aadb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RockMask:
+        m_Texture: {fileID: 2800000, guid: 287b16dfaf7a5f24bb0369477339ff47, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SnowMask:
+        m_Texture: {fileID: 2800000, guid: 587a5c823842a4148a155c6e34d8fea8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Stone:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WaterMask:
+        m_Texture: {fileID: 2800000, guid: 238b4ce99355b084dbefd9057af51669, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Diffuse01_Amount: 0.3
+    - _Diffuse01_UVTiling: 100
+    - _Diffuse02_Amount: 1
+    - _Diffuse02_UVTiling: 100
+    - _Diffuse03_Amount: 0.3
+    - _Diffuse03_UVTiling: 50
+    - _Diffuse04_Amount: 0
+    - _Diffuse04_UVTiling: 1
+    - _FresnelPower: 5
+    - _Shininess: 0.078125
+    - _UVTiling: 10
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color01: {r: 0.119403005, g: 0.10436624, b: 0.071285374, a: 1}
+    - _Color02: {r: 1, g: 1, b: 1, a: 1}
+    - _Color03: {r: 0.23134327, g: 0.23134327, b: 0.23134327, a: 1}
+    - _Color04: {r: 0.03352641, g: 0.036536094, b: 0.052238822, a: 1}
+    - _Dirt: {r: 0.25373137, g: 0.21992071, b: 0.1836712, a: 1}
+    - _Rock: {r: 0.3607843, g: 0.3607843, b: 0.3607843, a: 1}
+    - _Sand: {r: 0.35074627, g: 0.3036311, b: 0.25651592, a: 1}
+    - _Snow: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _Water: {r: 0.12937182, g: 0.1414912, b: 0.17164183, a: 1}

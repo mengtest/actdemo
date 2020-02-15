@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: juese 2
+  m_Shader: {fileID: 4800000, guid: 6a585ebb5a0eb6346835e015d9f6fc2e, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: c78f9e09dccd179498411916061ec77c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CutOut:
+        m_Texture: {fileID: 2800000, guid: b61c6757f744dde439ff59b2ac830fcc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 7e28241b02ae86c4db9345ec4d096ede, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BumpAmt: 2
+    - _ColorStrB: 1
+    - _ColorStrG: 1
+    - _ColorStrR: 1
+    - _ColorStrength: 0.3
+    - _ForceX: 0
+    - _ForceY: 0
+    - _HeatTime: 0
+    - _InvFade: 0
+    - _MMultiplier: 1
+    - _Shininess: 0.078125
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _TintColor: {r: 0.6544118, g: 0.6544118, b: 0.6544118, a: 0.39215687}
+    - _TintColorB: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _TintColorG: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _TintColorR: {r: 0.5, g: 0.5, b: 0.5, a: 1}

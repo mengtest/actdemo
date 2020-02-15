@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<!-- 动画事件触发器 -->
+	<AnimEventTriggers>
+		<Trigger id="10001">
+			<Effect id="10000"></Effect>
+			<Effect id="10001"></Effect>
+		</Trigger>
+		<Trigger id="10002">
+			<Effect id="10002"></Effect>
+			<Effect id="10003"></Effect>
+		</Trigger>
+		<Trigger id="20001">
+			<Effect id="10010"></Effect>
+		</Trigger>
+		<Trigger id="20002">
+			<Effect id="10011"></Effect>
+		</Trigger>
+		<Trigger id="30001">
+			<Effect id="10020"></Effect>
+			<Effect id="10021"></Effect>
+		</Trigger>
+		<Trigger id="30002">
+			<Effect id="10022"></Effect>
+		</Trigger>
+		<Trigger id="40001">
+			<Effect id="10030"></Effect>
+		</Trigger>
+		<Trigger id="40002">
+			<Effect id="10031"></Effect>
+		</Trigger>
+		<Trigger id="40003">
+			<Effect id="10032"></Effect>
+		</Trigger>
+	</AnimEventTriggers>
+	<!-- 植物动画效果 -->
+	<Effects>
+		<!-- 测试数据 -->
+		<Effect id="10000" type="Wave" delay="0" waveRadius="5" waveSpeed="15"></Effect>
+		<Effect id="10001" type="VolumeFactor" volumeFactor="20" delay="0" duration="0.2"></Effect>
+		<Effect id="10002" type="Wave" delay="0" waveRadius="5" waveSpeed="15"></Effect>
+		<Effect id="10003" type="VolumeFactor" volumeFactor="28" delay="0" duration="0.2"></Effect>
+
+		<Effect id="10010" type="Wave" delay="0" waveRadius="1.5" waveSpeed="10"></Effect>
+		<Effect id="10011" type="VirtualAgent" degree="0" distance="4" radius="3" velocityFactor="1" volumeFactor="35" delay="0" duration="0.1"></Effect>
+
+		<Effect id="10020" type="VelocityFactor" velocityFactor="15" delay="0" duration="2"></Effect>
+		<Effect id="10021" type="VolumeFactor" volumeFactor="15" delay="0" duration="2"></Effect>
+		<Effect id="10022" type="LineVirtualAgent" degree="0" distance="4" length="10" radius="1" velocityFactor="4" volumeFactor="12" delay="0" duration="0.03" stepSize="0.1" stepTime="0.001"></Effect>
+
+		<Effect id="10030" type="RndMoveVirtualAgent" degree="0" distance="1.3" radius="0.5" velocityFactor="4" volumeFactor="4" delay="0" duration="1.2" moveRadius="1" moveSpeed="1.5"></Effect>
+		<Effect id="10031" type="RndMoveVirtualAgent" degree="0" distance="1.3" radius="0.5" velocityFactor="4" volumeFactor="4" delay="0" duration="1.1" moveRadius="1" moveSpeed="20"></Effect>
+		<Effect id="10032" type="RndMoveVirtualAgent" degree="0" distance="1.3" radius="0.7" velocityFactor="4" volumeFactor="5" delay="0" duration="0.2" moveRadius="2" moveSpeed="20"></Effect>
+
+		<!-- 参考配置模板 -->
+		<!-- type和isRelative不要修改，直接使用复制，未填写的字段都是需要配置的 -->
+		<!-- 
+		通用字段描述:
+		id:
+		type:
+		    Radius:物体的虚拟半径，影响到半径几米内的植物动画。虚拟半径越大，影响到的植物越多。
+			VelocityFactor:物体的移动速度会影响到植物动画。这个功能可以让影响效果被增强或减弱。
+			VolumeFactor:物体只对在虚拟半径内的植物产生影响。这个功能可以让影响效果被增强或减弱。
+			VirtualAgent:创建一个虚拟物体，虚拟物体会对周围的植物动画产生影响。
+			Wave:物体的虚拟半径会逐渐扩张，然后缩小，像水波纹一样。
+			RndMoveVirtualAgent:创建一个虚拟物体，让虚拟物体在一定的范围内随机移动。
+			LineVirtualAgent:创建很多个虚拟物体，让这些虚拟物体按照一定的规则排成一条直线。
+		radius:虚拟半径
+		delay:延时几秒触发
+		duration:持续几秒
+		velocityFactor:移动速度影响因子
+		volumeFactor:虚拟半径影响因子
+		-->
+		<!--
+		<Effect id="" type="Radius" radius="" delay="" duration=""></Effect>
+		
+		<Effect id="" type="VelocityFactor" velocityFactor="" delay="" duration=""></Effect>
+		
+		<Effect id="" type="VolumeFactor" volumeFactor="" delay="" duration=""></Effect>
+				
+		degree:相对坐标（极坐标）角度
+		distance:相对坐标（极坐标）距离
+		<Effect id="" type="VirtualAgent" degree="" distance="" radius="" velocityFactor="" volumeFactor="" delay="" duration=""></Effect>
+		
+		waveRadius:波半径
+		waveSpeed:波运动速度
+		<Effect id="" type="Wave" delay="" waveRadius="" waveSpeed=""></Effect>
+				
+		degree:相对坐标（极坐标）角度
+		distance:相对坐标（极坐标）距离
+		<Effect id="" type="RndMoveVirtualAgent" degree="" distance="" radius="" velocityFactor="" volumeFactor="" delay="" duration="" moveRadius="" moveSpeed=""></Effect>
+		
+		degree:相对坐标（极坐标）角度
+		distance:相对坐标（极坐标）距离
+		length:直线的长度
+		stepSize:直线是有很多个虚拟点组成的。虚拟点之间的间隔。
+		stepTime:所有的虚拟点不是同时出现的，一个虚拟点出现后，间隔一段时间再出现下一个虚拟点。
+		<Effect id="" type="LineVirtualAgent" degree="" distance="" length="" radius="" velocityFactor="" volumeFactor="" delay="" duration="" stepSize="" stepTime=""></Effect>
+		-->
+	</Effects>
+</Root>

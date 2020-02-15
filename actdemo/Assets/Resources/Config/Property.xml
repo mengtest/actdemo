@@ -1,0 +1,266 @@
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!--
+	ObjId 		角色Id
+	ObjName 	角色名
+	RaceType	种族
+	ModelId		模型编号
+	InitLevel	初始等级
+	MoveSpeed	初始移动速度
+	AttackSpeed	初始攻击速度
+	SkillList	技能列表
+	
+	属性类型：
+	Bool = 1;
+	Int = 2;
+	Int64 = 3;
+	Float = 4;
+	Double = 5;
+	String = 6;
+-->
+<Property>
+	<ObjProperty ObjId="120006">
+		<Propertys PropName="ObjName" Type="6" Value="士兵"/>
+		<Propertys PropName="RaceType" Type="2" Value="3"/>
+		<Propertys PropName="ModelId" Type="2" Value="120006"/>
+		<Propertys PropName="MoveSpeed" Type="4" Value="0.01"/>
+		<Propertys PropName="AttackSpeed" Type="4" Value="1.0"/>
+		<Propertys PropName="AttackSpace" Type="4" Value="0.1"/>
+		<Propertys PropName="AttackActionCount" Type="2" Value="1"/>
+		<Propertys PropName="AttackId" Type="2" Value="60005"/>
+		<Propertys PropName="Level" Type="2" Value="1"/>
+		<Propertys PropName="AttackRange" Type="4" Value="2.0"/>
+		<Propertys PropName="HpRestoreRatio" Type="4" Value="0.05"/>
+		<Propertys PropName="MpRestoreRatio" Type="4" Value="0.05"/>
+		<Propertys PropName="EngRestoreRatio" Type="4" Value="0.1"/>
+		<Propertys PropName="CritRatio" Type="4" Value="0.5"/>
+		<Propertys PropName="CritDamageRatio" Type="4" Value="1.5"/>
+		<Propertys PropName="InitHp" Type="3" Value="6000"/>
+		<Propertys PropName="CurHp" Type="3" Value="6000"/>
+		<Propertys PropName="InitMp" Type="3" Value="6000"/>
+		<Propertys PropName="CurMp" Type="3" Value="6000"/>
+		<Propertys PropName="InitEng" Type="3" Value="100"/>
+		<Propertys PropName="CurEng" Type="3" Value="100"/>
+		<Propertys PropName="InitNA" Type="2" Value="100"/>
+		<Propertys PropName="InitMA" Type="2" Value="20"/>
+		<Propertys PropName="InitND" Type="2" Value="100"/>
+		<Propertys PropName="InitMD" Type="2" Value="500"/>
+		<Propertys PropName="SkillList" Type="6" Value="600010"/>
+		<Propertys PropName="HurtAudio" Type="2" Value="100002"/>
+		<Propertys PropName="PursuitRange" Type="4" Value="12"/>
+	</ObjProperty>
+	<ObjProperty ObjId="120007">
+		<Propertys PropName="ObjName" Type="6" Value="长枪兵"/>
+		<Propertys PropName="RaceType" Type="2" Value="3"/>
+		<Propertys PropName="ModelId" Type="2" Value="120007"/>
+		<Propertys PropName="MoveSpeed" Type="4" Value="0.1"/>
+		<Propertys PropName="AttackSpeed" Type="4" Value="1.0"/>
+		<Propertys PropName="AttackSpace" Type="4" Value="0.1"/>
+		<Propertys PropName="AttackActionCount" Type="2" Value="1"/>
+		<Propertys PropName="AttackId" Type="2" Value="610006"/>
+		<Propertys PropName="Level" Type="2" Value="1"/>
+		<Propertys PropName="AttackRange" Type="4" Value="2.0"/>
+		<Propertys PropName="HpRestoreRatio" Type="4" Value="0.05"/>
+		<Propertys PropName="MpRestoreRatio" Type="4" Value="0.05"/>
+		<Propertys PropName="EngRestoreRatio" Type="4" Value="0.1"/>
+		<Propertys PropName="CritRatio" Type="4" Value="0.5"/>
+		<Propertys PropName="CritDamageRatio" Type="4" Value="1.5"/>
+		<Propertys PropName="InitHp" Type="3" Value="6000"/>
+		<Propertys PropName="CurHp" Type="3" Value="6000"/>
+		<Propertys PropName="InitMp" Type="3" Value="6000"/>
+		<Propertys PropName="CurMp" Type="3" Value="6000"/>
+		<Propertys PropName="InitEng" Type="3" Value="6000"/>
+		<Propertys PropName="CurEng" Type="3" Value="6000"/>
+		<Propertys PropName="InitNA" Type="2" Value="100"/>
+		<Propertys PropName="InitMA" Type="2" Value="20"/>
+		<Propertys PropName="InitND" Type="2" Value="100"/>
+		<Propertys PropName="InitMD" Type="2" Value="500"/>
+		<Propertys PropName="SkillList" Type="6" Value="600011"/>
+		<Propertys PropName="HurtAudio" Type="2" Value="100003"/>
+		<Propertys PropName="PursuitRange" Type="4" Value="12"/>
+	</ObjProperty>
+	<ObjProperty ObjId="120008">
+		<Propertys PropName="ObjName" Type="6" Value="弓箭兵"/>
+		<Propertys PropName="RaceType" Type="2" Value="3"/>
+		<Propertys PropName="ModelId" Type="2" Value="120008"/>
+		<Propertys PropName="MoveSpeed" Type="4" Value="0.1"/>
+		<Propertys PropName="AttackSpeed" Type="4" Value="1.0"/>
+		<Propertys PropName="AttackSpace" Type="4" Value="0.2"/>
+		<Propertys PropName="AttackActionCount" Type="2" Value="1"/>
+		<Propertys PropName="AttackId" Type="2" Value="610007"/>
+		<Propertys PropName="Level" Type="2" Value="1"/>
+		<Propertys PropName="AttackRange" Type="4" Value="10.0"/>
+		<Propertys PropName="HpRestoreRatio" Type="4" Value="0.05"/>
+		<Propertys PropName="MpRestoreRatio" Type="4" Value="0.05"/>
+		<Propertys PropName="EngRestoreRatio" Type="4" Value="0.1"/>
+		<Propertys PropName="CritRatio" Type="4" Value="0.5"/>
+		<Propertys PropName="CritDamageRatio" Type="4" Value="5"/>
+		<Propertys PropName="InitHp" Type="3" Value="6000"/>
+		<Propertys PropName="CurHp" Type="3" Value="6000"/>
+		<Propertys PropName="InitMp" Type="3" Value="6000"/>
+		<Propertys PropName="CurMp" Type="3" Value="6000"/>
+		<Propertys PropName="InitEng" Type="3" Value="100"/>
+		<Propertys PropName="CurEng" Type="3" Value="100"/>
+		<Propertys PropName="InitNA" Type="2" Value="100"/>
+		<Propertys PropName="InitMA" Type="2" Value="20"/>
+		<Propertys PropName="InitND" Type="2" Value="100"/>
+		<Propertys PropName="InitMD" Type="2" Value="500"/>
+		<Propertys PropName="SkillList" Type="6" Value="600012"/>
+		<Propertys PropName="HurtAudio" Type="2" Value="100004"/>
+		<Propertys PropName="PursuitRange" Type="4" Value="12"/>
+	</ObjProperty>
+	<ObjProperty ObjId="120009">
+		<Propertys PropName="ObjName" Type="6" Value="剧情副本巡逻队长"/>
+		<Propertys PropName="RaceType" Type="2" Value="3"/>
+		<Propertys PropName="ModelId" Type="2" Value="120009"/>
+		<Propertys PropName="MoveSpeed" Type="4" Value="0.1"/>
+		<Propertys PropName="AttackSpeed" Type="4" Value="1.0"/>
+		<Propertys PropName="AttackSpace" Type="4" Value="0.1"/>
+		<Propertys PropName="AttackActionCount" Type="2" Value="1"/>
+		<Propertys PropName="AttackId" Type="2" Value="610005"/>
+		<Propertys PropName="Level" Type="2" Value="1"/>
+		<Propertys PropName="AttackRange" Type="4" Value="2.0"/>
+		<Propertys PropName="HpRestoreRatio" Type="4" Value="0.05"/>
+		<Propertys PropName="MpRestoreRatio" Type="4" Value="0.05"/>
+		<Propertys PropName="EngRestoreRatio" Type="4" Value="0.1"/>
+		<Propertys PropName="CritRatio" Type="4" Value="0.5"/>
+		<Propertys PropName="CritDamageRatio" Type="4" Value="1.5"/>
+		<Propertys PropName="InitHp" Type="3" Value="12000"/>
+		<Propertys PropName="CurHp" Type="3" Value="12000"/>
+		<Propertys PropName="InitMp" Type="3" Value="12000"/>
+		<Propertys PropName="CurMp" Type="3" Value="12000"/>
+		<Propertys PropName="InitEng" Type="3" Value="100"/>
+		<Propertys PropName="CurEng" Type="3" Value="100"/>
+		<Propertys PropName="InitNA" Type="2" Value="100"/>
+		<Propertys PropName="InitMA" Type="2" Value="20"/>
+		<Propertys PropName="InitND" Type="2" Value="100"/>
+		<Propertys PropName="InitMD" Type="2" Value="500"/>
+		<Propertys PropName="SkillList" Type="6" Value="600013"/>
+		<Propertys PropName="HurtAudio" Type="2" Value="100005"/>
+		<Propertys PropName="PursuitRange" Type="4" Value="12"/>
+	</ObjProperty>
+	<ObjProperty ObjId="120010">
+		<Propertys PropName="ObjName" Type="6" Value="副本老1"/>
+		<Propertys PropName="RaceType" Type="2" Value="3"/>
+		<Propertys PropName="ModelId" Type="2" Value="120010"/>
+		<Propertys PropName="MoveSpeed" Type="4" Value="0.6"/>
+		<Propertys PropName="AttackSpeed" Type="4" Value="1.0"/>
+		<Propertys PropName="AttackSpace" Type="4" Value="0.1"/>
+		<Propertys PropName="AttackActionCount" Type="2" Value="1"/>
+		<Propertys PropName="AttackId" Type="2" Value="610009"/>
+		<Propertys PropName="Level" Type="2" Value="1"/>
+		<Propertys PropName="AttackRange" Type="4" Value="2.0"/>
+		<Propertys PropName="HpRestoreRatio" Type="4" Value="0.05"/>
+		<Propertys PropName="MpRestoreRatio" Type="4" Value="0.05"/>
+		<Propertys PropName="EngRestoreRatio" Type="4" Value="0.1"/>
+		<Propertys PropName="CritRatio" Type="4" Value="0.5"/>
+		<Propertys PropName="CritDamageRatio" Type="4" Value="1.5"/>
+		<Propertys PropName="InitHp" Type="3" Value="12000"/>
+		<Propertys PropName="CurHp" Type="3" Value="12000"/>
+		<Propertys PropName="InitMp" Type="3" Value="12000"/>
+		<Propertys PropName="CurMp" Type="3" Value="12000"/>
+		<Propertys PropName="InitEng" Type="3" Value="100"/>
+		<Propertys PropName="CurEng" Type="3" Value="100"/>
+		<Propertys PropName="InitNA" Type="2" Value="100"/>
+		<Propertys PropName="InitMA" Type="2" Value="20"/>
+		<Propertys PropName="InitND" Type="2" Value="100"/>
+		<Propertys PropName="InitMD" Type="2" Value="500"/>
+		<Propertys PropName="SkillList" Type="6" Value="600014,600015,600018"/>
+		<Propertys PropName="HurtAudio" Type="2" Value="100006"/>
+		<Propertys PropName="PursuitRange" Type="4" Value="12"/>
+	</ObjProperty>
+	<ObjProperty ObjId="120011">
+		<Propertys PropName="ObjName" Type="6" Value="副本老2"/>
+		<Propertys PropName="RaceType" Type="2" Value="3"/>
+		<Propertys PropName="ModelId" Type="2" Value="120011"/>
+		<Propertys PropName="MoveSpeed" Type="4" Value="0.6"/>
+		<Propertys PropName="AttackSpeed" Type="4" Value="1.0"/>
+		<Propertys PropName="AttackSpace" Type="4" Value="0.1"/>
+		<Propertys PropName="AttackActionCount" Type="2" Value="2"/>
+		<Propertys PropName="AttackId" Type="2" Value="610010"/>
+		<Propertys PropName="Level" Type="2" Value="1"/>
+		<Propertys PropName="AttackRange" Type="4" Value="5.0"/>
+		<Propertys PropName="HpRestoreRatio" Type="4" Value="0.05"/>
+		<Propertys PropName="MpRestoreRatio" Type="4" Value="0.05"/>
+		<Propertys PropName="EngRestoreRatio" Type="4" Value="0.1"/>
+		<Propertys PropName="CritRatio" Type="4" Value="0.5"/>
+		<Propertys PropName="CritDamageRatio" Type="4" Value="1.5"/>
+		<Propertys PropName="InitHp" Type="3" Value="17000"/>
+		<Propertys PropName="CurHp" Type="3" Value="17000"/>
+		<Propertys PropName="InitMp" Type="3" Value="17000"/>
+		<Propertys PropName="CurMp" Type="3" Value="17000"/>
+		<Propertys PropName="InitEng" Type="3" Value="100"/>
+		<Propertys PropName="CurEng" Type="3" Value="100"/>
+		<Propertys PropName="InitNA" Type="2" Value="100"/>
+		<Propertys PropName="InitMA" Type="2" Value="20"/>
+		<Propertys PropName="InitND" Type="2" Value="100"/>
+		<Propertys PropName="InitMD" Type="2" Value="500"/>
+		<Propertys PropName="SkillList" Type="6" Value="600016,600017,600019"/>
+		<Propertys PropName="HurtAudio" Type="2" Value="100007"/>
+		<Propertys PropName="RunAudio" Type="2" Value="200002"/>
+		<Propertys PropName="PursuitRange" Type="4" Value="12"/>
+	</ObjProperty>
+	<ObjProperty ObjId="100008">
+		<Propertys PropName="ObjName" Type="6" Value="主角"/>
+		<Propertys PropName="RaceType" Type="2" Value="3"/>
+		<Propertys PropName="ModelId" Type="2" Value="120006"/>
+		<Propertys PropName="MoveSpeed" Type="4" Value="1.0"/>
+		<Propertys PropName="AttackSpeed" Type="4" Value="1.0"/>
+		<Propertys PropName="AttackSpace" Type="4" Value="1.0"/>
+		<Propertys PropName="AttackActionCount" Type="2" Value="4"/>
+		<Propertys PropName="Level" Type="2" Value="1"/>
+		<Propertys PropName="AttackRange" Type="4" Value="2.0"/>
+		<Propertys PropName="HpRestoreRatio" Type="4" Value="0.05"/>
+		<Propertys PropName="MpRestoreRatio" Type="4" Value="0.05"/>
+		<Propertys PropName="EngRestoreRatio" Type="4" Value="0.1"/>
+		<Propertys PropName="CritRatio" Type="4" Value="0.5"/>
+		<Propertys PropName="CritDamageRatio" Type="4" Value="1.5"/>
+		<Propertys PropName="InitHp" Type="3" Value="300000"/>
+		<Propertys PropName="CurHp" Type="3" Value="300000"/>
+		<Propertys PropName="InitMp" Type="3" Value="3000"/>
+		<Propertys PropName="CurMp" Type="3" Value="3000"/>
+		<Propertys PropName="InitEng" Type="3" Value="100"/>
+		<Propertys PropName="CurEng" Type="3" Value="100"/>
+		<Propertys PropName="InitNA" Type="2" Value="300"/>
+		<Propertys PropName="InitMA" Type="2" Value="5"/>
+		<Propertys PropName="InitND" Type="2" Value="2"/>
+		<Propertys PropName="InitMD" Type="2" Value="1"/>
+		<Propertys PropName="SkillList" Type="6" Value="600005,600006,600007,600008,600009"/>
+		<Propertys PropName="PursuitRange" Type="4" Value="12"/>
+		<Propertys PropName="HurtAudio" Type="2" Value="100001"/>
+		<Propertys PropName="RunAudio" Type="2" Value="200001"/>
+	</ObjProperty>
+	<ObjProperty ObjId="140008">
+		<Propertys PropName="ObjName" Type="6" Value="主角"/>
+		<Propertys PropName="RaceType" Type="2" Value="3"/>
+		<Propertys PropName="ModelId" Type="2" Value="120006"/>
+		<Propertys PropName="MoveSpeed" Type="4" Value="1.0"/>
+		<Propertys PropName="AttackSpeed" Type="4" Value="1.0"/>
+		<Propertys PropName="AttackSpace" Type="4" Value="1.0"/>
+		<Propertys PropName="AttackActionCount" Type="2" Value="4"/>
+		<Propertys PropName="Level" Type="2" Value="1"/>
+		<Propertys PropName="AttackRange" Type="4" Value="2.0"/>
+		<Propertys PropName="HpRestoreRatio" Type="4" Value="0.05"/>
+		<Propertys PropName="MpRestoreRatio" Type="4" Value="0.05"/>
+		<Propertys PropName="EngRestoreRatio" Type="4" Value="0.1"/>
+		<Propertys PropName="CritRatio" Type="4" Value="0.5"/>
+		<Propertys PropName="CritDamageRatio" Type="4" Value="1.5"/>
+		<Propertys PropName="InitHp" Type="3" Value="300000"/>
+		<Propertys PropName="CurHp" Type="3" Value="300000"/>
+		<Propertys PropName="InitMp" Type="3" Value="3000"/>
+		<Propertys PropName="CurMp" Type="3" Value="3000"/>
+		<Propertys PropName="InitEng" Type="3" Value="100"/>
+		<Propertys PropName="CurEng" Type="3" Value="100"/>
+		<Propertys PropName="InitNA" Type="2" Value="300"/>
+		<Propertys PropName="InitMA" Type="2" Value="5"/>
+		<Propertys PropName="InitND" Type="2" Value="2"/>
+		<Propertys PropName="InitMD" Type="2" Value="1"/>
+		<Propertys PropName="SkillList" Type="6" Value="600005,600006,600007,600008,600009"/>
+		<Propertys PropName="PursuitRange" Type="4" Value="12"/>
+	</ObjProperty>
+</Property>

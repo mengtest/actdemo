@@ -1,0 +1,27 @@
+<!-- 被2011 rel. 2 sp1 (huanghao) 使用XMLSpy vhuanghao编辑的 (http://www.altova.com) by -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 
+ SkillNumber="0" 技能位置
+ SkillSpace="0"  技能CD
+ SkillConsumptionType="3"   消耗类型 1、无消耗2、生命、3魔法、4能量5、BUF6、DEBUF
+ SkillConsumptionValue="60" 技能耗蓝
+
+
+-->
+<SkillProperty>
+	<Property No="600005" Name="吕布攻击" Model="100008" SkillNumber="0" SkillSpace="0" SkillConsumptionType="3" SkillConsumptionValue="60" Des="1"/>
+	<Property No="600006" Name="裂地决" Model="100008" SkillNumber="1" SkillSpace="7" SkillConsumptionType="3" SkillConsumptionValue="80" Des="进入蓄力动作，蓄力动作完成挥动方天画戟，猛击地面，造成三道气浪。被气浪伤害的敌人造成200%物理伤害，并击飞。气浪经过的地方形成一道岩浆。在岩浆内的敌人每秒受到50%物理伤害，持续3秒"/>
+	<Property No="600007" Name="野蛮冲撞" Model="100008" SkillNumber="2" SkillSpace="8" SkillConsumptionType="3" SkillConsumptionValue="80" Des="拿着方天画戟，冲刺到前方。前方范围地敌人被聚集到一起。第二击击飞附近的敌人"/>
+	<Property No="600008" Name="山崩地裂" Model="100008" SkillNumber="3" SkillSpace="14" SkillConsumptionType="3" SkillConsumptionValue="120" Des="以自身为中心旋转方天画戟360度，，击飞附近的敌人。并跳起，乡下挥动武器，把击飞的敌人全部击倒到地上。掉落地上后，造成一个圆形的地形破坏。 再次按住技能不放。进入蓄力状态。蓄力完毕。圆形地形产生大的爆炸效果"/>
+	<Property No="600009" Name="战神下凡" Model="100008" SkillNumber="4" SkillSpace="20" SkillConsumptionType="3" SkillConsumptionValue="150" Des="全身覆盖一身红色气焰持续6秒，左右挥击两下画戟，聚集前方的怪物。并造成2秒受击硬直。蓄力半秒后。 再次高频率挥击7下武器。造成200%物理伤害。并最后一击 击退所有敌人"/>
+	<Property No="600010" Name="刀盾攻击" Model="120006" SkillNumber="0" SkillSpace="0" SkillConsumptionType="1" SkillConsumptionValue="0" Des="刀盾攻击"/>
+	<Property No="600011" Name="长枪攻击" Model="120007" SkillNumber="0" SkillSpace="0" SkillConsumptionType="1" SkillConsumptionValue="0" Des="长枪攻击"/>
+	<Property No="600012" Name="弓箭兵攻击" Model="120008" SkillNumber="0" SkillSpace="0" SkillConsumptionType="1" SkillConsumptionValue="0" Des="弓箭兵攻击"/>
+	<Property No="600013" Name="巡逻队长攻击" Model="120009" SkillNumber="0" SkillSpace="0" SkillConsumptionType="1" SkillConsumptionValue="0" Des="巡逻队长攻击"/>
+	<Property No="600014" Name="老1攻击1" Model="120010" SkillNumber="0" SkillSpace="0" SkillConsumptionType="1" SkillConsumptionValue="0" Des="老1攻击"/>
+	<Property No="600015" Name="老1技能" Model="120010" SkillNumber="0" SkillSpace="20" SkillConsumptionType="1" SkillConsumptionValue="0" Des="老1技能"/>
+	<Property No="600016" Name="老2攻击" Model="120011" SkillNumber="0" SkillSpace="0" SkillConsumptionType="1" SkillConsumptionValue="0" Des="老2攻击"/>
+	<Property No="600017" Name="老2技能" Model="120011" SkillNumber="0" SkillSpace="20" SkillConsumptionType="1" SkillConsumptionValue="0" Des="老2技能"/>
+	<Property No="600018" Name="老1攻击2" Model="120010" SkillNumber="0" SkillSpace="0" SkillConsumptionType="1" SkillConsumptionValue="0" Des="老1攻击"/>
+	<Property No="600019" Name="老2攻击2" Model="120011" SkillNumber="0" SkillSpace="0" SkillConsumptionType="1" SkillConsumptionValue="0" Des="老2攻击"/>
+</SkillProperty>

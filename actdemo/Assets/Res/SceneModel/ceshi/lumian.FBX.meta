@@ -1,0 +1,142 @@
+fileFormatVersion: 2
+guid: 7c27e76bc93e80640966d4bbc781e85b
+timeCreated: 1452067754
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: lumian01
+    100004: lumian02
+    100006: lumian03
+    100008: lumian04
+    100010: lumian05
+    100012: lumian06
+    100014: lumian07
+    100016: lumian08
+    100018: lumian09
+    100020: lumian10
+    100022: lumian11
+    100024: lumian12
+    100026: lumian13
+    400000: //RootNode
+    400002: lumian01
+    400004: lumian02
+    400006: lumian03
+    400008: lumian04
+    400010: lumian05
+    400012: lumian06
+    400014: lumian07
+    400016: lumian08
+    400018: lumian09
+    400020: lumian10
+    400022: lumian11
+    400024: lumian12
+    400026: lumian13
+    2300000: //RootNode
+    2300002: lumian01
+    2300004: lumian02
+    2300006: lumian03
+    2300008: lumian04
+    2300010: lumian05
+    2300012: lumian06
+    2300014: lumian07
+    2300016: lumian08
+    2300018: lumian09
+    2300020: lumian10
+    2300022: lumian11
+    2300024: lumian12
+    2300026: lumian13
+    3300000: //RootNode
+    3300002: lumian01
+    3300004: lumian02
+    3300006: lumian03
+    3300008: lumian04
+    3300010: lumian05
+    3300012: lumian06
+    3300014: lumian07
+    3300016: lumian08
+    3300018: lumian09
+    3300020: lumian10
+    3300022: lumian11
+    3300024: lumian12
+    3300026: lumian13
+    4300000: lumian
+    4300002: lumian01
+    4300004: lumian02
+    4300006: lumian03
+    4300008: lumian04
+    4300010: lumian05
+    4300012: lumian06
+    4300014: lumian07
+    4300016: lumian08
+    4300018: lumian09
+    4300020: lumian10
+    4300022: lumian11
+    4300024: lumian12
+    4300026: lumian13
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

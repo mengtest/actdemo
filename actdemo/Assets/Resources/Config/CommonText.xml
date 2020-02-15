@@ -1,0 +1,15 @@
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<CommonText>
+  <!--系统提示-->
+  <Property TextId="System0001" Text="连接服务器失败" />
+  <Property TextId="System0002" Text="创建角色失败" />
+	<Property TextId="System0003" Text="进入游戏失败" />
+  
+  <!--游戏提示-->
+  <Property TextId="Game0001" Text="努力加载中……" />
+  <Property TextId="Game0002" Text="金币不够咯~" />
+  
+  <!--错误代码提示-->
+  <Property TextId="Error0001" Text="~！@#￥%……（）" />
+  
+</CommonText>

@@ -1,0 +1,56 @@
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!--No:编号  
+ No:编号
+ Name:注释名称
+ FileName:资源路径
+ model:相关模型编号
+ active:动作
+ -->
+<effectconfig>
+	<Property No="900001" Name="攻击1" Path="Effect/Skill" FileName="100008_attack_01" Model="100008" active="attack_1" FollowAction="1"/>
+	<Property No="900002" Name="攻击2" Path="Effect/Skill" FileName="100008_attack_02" Model="100008" active="attack_2" FollowAction="1"/>
+	<Property No="900003" Name="攻击3" Path="Effect/Skill" FileName="100008_attack_03" Model="100008" active="attack_3" FollowAction="1"/>
+	<Property No="9000016" Name="攻击3" Path="Effect/Skill" FileName="100008_attack_03_dimian" Model="100008" active="attack_3" FollowAction="0" EffectDirectionType="1" EffectDirectionDistance="6.0" EffectRotation="1"/>
+	<Property No="900004" Name="攻击4" Path="Effect/Skill" FileName="100008_attack_04" Model="100008" active="attack_4" FollowAction="1"/>
+	<Property No="900005" Name="技能1效果b" Path="Effect/Skill" FileName="100008_skill01" Model="100008" active="skill_1" FollowAction="1"/>
+	<Property No="900007" Name="技能2效果a" Path="Effect/Skill" FileName="100008_skill02_b" Model="100008" active="skill_2_b" FollowAction="0" EffectRotation="1"/>
+	<Property No="9000014" Name="技能2效果a" Path="Effect/Skill" RemoveEffect="100008_skill02_b_chongci" Model="100008" active="skill_2_b" FollowAction="1"/>
+	<Property No="900008" Name="技能2效果c" Path="Effect/Skill" FileName="100008_skill02_c" Model="100008" active="skill_2_c" FollowAction="1"/>
+	<Property No="900009" Name="技能3效果a" Path="Effect/Skill" FileName="100008_skill03_a" Model="100008" active="skill_3_a" FollowAction="1"/>
+	<Property No="900036" Name="技能3效果a" Path="Effect/Skill" FileName="100008_skill03_a_dimian" Model="100008" active="skill_3_a" FollowAction="0" EffectDirectionType="1" EffectDirectionDistance="2.5"/>
+	<Property No="900010" Name="技能3效果b" Path="Effect/Skill" FileName="100008_skill03_b" Model="100008" active="skill_3_b" FollowAction="1"/>
+	<Property No="900015" Name="技能3效果b" Path="Effect/Skill" RemoveEffect="100008_skill03_b" Model="100008" active="skill_3_b" FollowAction="1"/>
+	<Property No="900011" Name="技能3效果c" Path="Effect/Skill" FileName="100008_skill03_c" Model="100008" active="skill_3_c" FollowAction="0"/>
+	<Property No="900035" Name="技能3效果c" Path="Effect/Skill" FileName="100008_skill03_c_dimian" Model="100008" active="skill_3_c" FollowAction="0" EffectDirectionType="1" EffectDirectionDistance="2"/>
+	<Property No="900013" Name="攻击命中特效" Path="Effect/Skill" FileName="effect_shouji1" Model="100008" active="" FollowAction="1"/>
+	<Property No="900012" Name="效果4效果a" Path="Effect/Skill" FileName="100008_skill04_a" Model="100008" active="skill_04_a" FollowAction="0" EffectRotation="1"/>
+	<Property No="900018" Name="效果4效果b" Path="Effect/Skill" FileName="100008_skill04_b" Model="100008" active="skill_04_b" FollowAction="1"/>
+	<Property No="900019" Name="效果4效果c" Path="Effect/Skill" FileName="100008_skill04_c" Model="100008" active="skill_04_c" FollowAction="1"/>
+	<Property No="900033" Name="效果4效果c" Path="Effect/Skill" FileName="100008_skill04_c_dimian" Model="100008" active="skill_04_c" FollowAction="0" EffectDirectionType="2" EffectDirectionDistance="10.0"/>
+	<Property No="900020" Name="倒地灰尘" Path="Effect/Action" FileName="effect_float" Model="120006" active="topple" FollowAction="0"/>
+	<Property No="900021" Name="倒地灰尘" Path="Effect/Skill" FileName="120006_attack_1" Model="120006" active="attack_1" FollowAction="1"/>
+	<Property No="900022" Name="倒地灰尘" Path="Effect/Skill" FileName="120007_attack_1" Model="120007" active="attack_1" FollowAction="1"/>
+	<Property No="900024" Name="倒地灰尘" Path="Effect/Skill" FileName="120009_attack_1" Model="120009" active="attack_1" FollowAction="1"/>
+	<Property No="900025" Name="倒地灰尘" Path="Effect/Skill" FileName="120010_attack_1" Model="120010" active="attack_1" FollowAction="1"/>
+	<Property No="900026" Name="倒地灰尘" Path="Effect/Skill" FileName="120010_attack_2" Model="120010" active="attack_2" FollowAction="1"/>
+	<Property No="900027" Name="倒地灰尘" Path="Effect/Skill" FileName="120011_attack_1" Model="120011" active="attack_1" FollowAction="1"/>
+	<Property No="900028" Name="倒地灰尘" Path="Effect/Action" FileName="effect_float" Model="120007" active="topple" FollowAction="0"/>
+	<Property No="900029" Name="倒地灰尘" Path="Effect/Action" FileName="effect_float" Model="120008" active="topple" FollowAction="0"/>
+	<Property No="900030" Name="倒地灰尘" Path="Effect/Action" FileName="effect_float" Model="120009" active="topple" FollowAction="0"/>
+	<Property No="900031" Name="倒地灰尘" Path="Effect/Action" FileName="effect_float" Model="120010" active="topple" FollowAction="0"/>
+	<Property No="900032" Name="倒地灰尘" Path="Effect/Action" FileName="effect_float" Model="120011" active="topple" FollowAction="0"/>
+	<Property No="900034" name="弓箭效果" Path="Effect/Skill" FileName="130001" Model="130001" active="attack_1" FollowAction="1"/>
+	<Property No="900037" Name="攻击命中特效" Path="Effect/Skill" FileName="effect_shouji_huo" Model="100008" active="" FollowAction="1" EffectFollowBip="1"/>
+	<Property No="900038" Name="弓箭兵攻击" Path="Effect/Skill" FileName="120008_attack_01_fd" Model="120008" active="attack_1" FollowAction="1"/>
+	<Property No="900040" Name="BOSS攻击2震地" Path="Effect/Skill" FileName="120011_attack_2_dimian" Model="120011" active="attack_2" FollowAction="0" EffectDirectionType="1" EffectDirectionDistance="8.0" EffectRotation=""/>
+</effectconfig>

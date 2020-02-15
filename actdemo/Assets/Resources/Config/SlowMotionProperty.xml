@@ -1,0 +1,16 @@
+﻿<!-- 
+Index 	- 节点索引（从0开始）
+TimeScale - 时间缩放
+Time	- 播放时间
+FieldOfView - 相机广角
+EaseType - 运动类型
+-->
+<SlowMotion>
+	<Property ActionId="10000843" >
+		<SlowMotions Index="0" Time="0.08" FieldOfView="80.0" TimeScale="0.2" EaseType="21" />
+		<SlowMotions Index="1" Time="0.2" FieldOfView="80.0" TimeScale="0.2" EaseType="21" />
+		<SlowMotions Index="2" Time="1.5" FieldOfView="80.0" TimeScale="0.2" EaseType="21" />
+		<SlowMotions Index="3" Time="1.5" FieldOfView="80.0" TimeScale="0.2" EaseType="21" />
+		<SlowMotions Index="4" Time="1.0" FieldOfView="80.0" TimeScale="0.2" EaseType="21" />
+	</Property>
+</SlowMotion>

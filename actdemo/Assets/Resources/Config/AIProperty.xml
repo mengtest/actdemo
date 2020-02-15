@@ -1,0 +1,15 @@
+<!-- 
+AIIndex 	- AI顺序
+AIStageType - AI阶段
+AIStageValue - AI阶段参数
+AIStageValueType - AI阶段参数类型
+AIStageAction - AI行为
+AIStageActionValue - AI行为参数
+AIStageActionType - AI行为参数类型
+-->
+<AI>
+	<Property Id="1" >
+		<AIStage AIIndex="1" AIStageType="1" AIStageValue="" AIStageValueType="" AIStageAction="1" AIStageActionValue="" AIStageActionType="" />
+		<AIStage AIIndex="2" AIStageType="1" AIStageValue="" AIStageValueType="" AIStageAction="2" AIStageActionValue="" AIStageActionType="" />
+	</Property>
+</AI>

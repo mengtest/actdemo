@@ -1,0 +1,77 @@
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<AudioProperty>
+	<Property AudioKey="1" AudioModel="100008" AudioAction="attack_1" AudioResource="attack_1" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="2" AudioModel="100008" AudioAction="attack_2" AudioResource="attack_2" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="3" AudioModel="100008" AudioAction="attack_3" AudioResource="attack_3" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="4" AudioModel="100008" AudioAction="attack_4" AudioResource="attack_4" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="5" AudioModel="100008" AudioAction="attack_1" AudioResource="attack_1_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="6" AudioModel="100008" AudioAction="attack_2" AudioResource="attack_2_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="7" AudioModel="100008" AudioAction="attack_3" AudioResource="attack_3_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="8" AudioModel="100008" AudioAction="attack_4" AudioResource="attack_4_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="9" AudioModel="" AudioAction="" AudioResource="battlemusic1" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="true"/>
+	<Property AudioKey="100001" AudioModel="" AudioAction="" AudioResource="effect" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="10" AudioModel="100008" AudioAction="skill_2_a" AudioResource="skill_02_a_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="11" AudioModel="100008" AudioAction="skill_2_b" AudioResource="skill_02_b_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="12" AudioModel="100008" AudioAction="skill_3_a" AudioResource="skill_03_a_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="13" AudioModel="100008" AudioAction="skill_4_a" AudioResource="attack_4_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="14" AudioModel="100008" AudioAction="skill_4_c" AudioResource="skill_04_c_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="15" AudioModel="100008" AudioAction="skill_1" AudioResource="skill_01" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="16" AudioModel="100008" AudioAction="skill_2_a" AudioResource="skill_02_a_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="17" AudioModel="100008" AudioAction="skill_2_b" AudioResource="skill_02_b" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="18" AudioModel="100008" AudioAction="skill_2_c" AudioResource="skill_02_c" AudioVolume="1.0" AudioFrontTime="0.3" AudioLoop="false"/>
+	<Property AudioKey="19" AudioModel="100008" AudioAction="skill_3_a" AudioResource="skill_03_a" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="20" AudioModel="100008" AudioAction="skill_3_b" AudioResource="skill_03_b" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="true"/>
+	<Property AudioKey="21" AudioModel="100008" AudioAction="skill_3_c" AudioResource="skill_03_c" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="22" AudioModel="100008" AudioAction="skill_04_a" AudioResource="skill_04_a" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="23" AudioModel="100008" AudioAction="skill_04_b" AudioResource="skill_04_b" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="24" AudioModel="100008" AudioAction="skill_04_c" AudioResource="skill_04_c" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="25" AudioModel="100008" AudioAction="back_1" AudioResource="back_1" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="26" AudioModel="100008" AudioAction="back_2" AudioResource="back_1" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="27" AudioModel="100008" AudioAction="back_3" AudioResource="back_1" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="28" AudioModel="100008" AudioAction="back_4" AudioResource="back_1" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="200001" AudioModel="" AudioAction="run" AudioResource="run" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="true"/>
+	<Property AudioKey="29" AudioModel="120006" AudioAction="attack_1" AudioResource="daodunbing_attack_1" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="100002" AudioModel="120006" AudioAction="effect" AudioResource="daodunbing_effect" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="30" AudioModel="120007" AudioAction="attack_1" AudioResource="changqiangbing_attack_1" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="100003" AudioModel="120007" AudioAction="effect" AudioResource="changqiangbing_effect" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="31" AudioModel="120008" AudioAction="attack_1" AudioResource="gongjianbing_attack_1" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="100004" AudioModel="120008" AudioAction="effect" AudioResource="gongjianbing_effect" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="32" AudioModel="120009" AudioAction="attack_1" AudioResource="lanseshouwei_attack_1" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="100005" AudioModel="120009" AudioAction="effect" AudioResource="lanseshouwei_effect" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="33" AudioModel="120009" AudioAction="back_1" AudioResource="lanseshouwei_back_1_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="34" AudioModel="120009" AudioAction="back_2" AudioResource="lanseshouwei_back_1_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="35" AudioModel="120009" AudioAction="back_3" AudioResource="lanseshouwei_back_1_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="36" AudioModel="120009" AudioAction="back_4" AudioResource="lanseshouwei_back_1_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="37" AudioModel="120009" AudioAction="diedown" AudioResource="lanseshouwei_diedown" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="38" AudioModel="120010" AudioAction="attack_1" AudioResource="dadaoshouwei_attack_1" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="100006" AudioModel="120010" AudioAction="effect" AudioResource="dadaoshouwei_effect" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="39" AudioModel="120010" AudioAction="back_1" AudioResource="dadaoshouwei_back_1_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="40" AudioModel="120010" AudioAction="back_2" AudioResource="dadaoshouwei_back_1_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="41" AudioModel="120010" AudioAction="back_3" AudioResource="dadaoshouwei_back_1_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="42" AudioModel="120010" AudioAction="back_4" AudioResource="dadaoshouwei_back_1_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="43" AudioModel="120010" AudioAction="diedown" AudioResource="dadaoshouwei_diedown" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="44" AudioModel="120011" AudioAction="attack_1" AudioResource="boss_attack_1" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="45" AudioModel="120011" AudioAction="attack_1" AudioResource="boss_attack_1_voice" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="100007" AudioModel="120011" AudioAction="effect" AudioResource="boss_effect" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="46" AudioModel="120011" AudioAction="back_1" AudioResource="boss_back_1" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="47" AudioModel="120011" AudioAction="back_2" AudioResource="boss_back_1" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="48" AudioModel="120011" AudioAction="back_3" AudioResource="boss_back_1" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="49" AudioModel="120011" AudioAction="back_4" AudioResource="boss_back_1" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="50" AudioModel="120011" AudioAction="diedown" AudioResource="boss_diedown" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="false"/>
+	<Property AudioKey="200002" AudioModel="120011" AudioAction="run" AudioResource="boss_run" AudioVolume="1.0" AudioFrontTime="0.0" AudioLoop="true"/>
+</AudioProperty>
