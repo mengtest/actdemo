@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using EZCameraShake;
+using UnityStandardAssets.Cameras;
 
 public class RoleControllerManager : MonoBehaviour
 {
@@ -38,6 +39,8 @@ public class RoleControllerManager : MonoBehaviour
     /// 相机抖动
     /// </summary>
     private CameraShaker mCameraShaker = null;
+
+    private FreeLookCam _mFreeCam = null;
 
     public CameraShaker CameraShakerInstance
     {
@@ -97,21 +100,24 @@ public class RoleControllerManager : MonoBehaviour
         mRoleObject.mTransform = mRoleGo.transform;
 
         // 创建主相机
-        mMainCamera = GameObject.Find("Main Camera");
-        if (mMainCamera == null)
-        {
-            mMainCamera = new GameObject("Main Camera");
-            Camera camera = mMainCamera.AddComponent<Camera>();
-        }
+        //mMainCamera = GameObject.Find("Main Camera");
+        //if (mMainCamera == null)
+        //{
+        //    mMainCamera = new GameObject("Main Camera");
+        //    Camera camera = mMainCamera.AddComponent<Camera>();
+        //}
 
         // 相机跟随
-        mCameraMove = mMainCamera.GetComponent<CameraMove>();
-        if (mCameraMove == null)
-        {
-            mCameraMove = mMainCamera.AddComponent<CameraMove>();
-        }
-        mCameraMove.SetRoleGameObject(mRoleGo.transform.Find("Bip01").gameObject);
-        
+        //mCameraMove = mMainCamera.GetComponent<CameraMove>();
+        //if (mCameraMove == null)
+        //{
+        //    mCameraMove = mMainCamera.AddComponent<CameraMove>();
+        //}
+        //mCameraMove.SetRoleGameObject(mRoleGo.transform.Find("Bip01").gameObject);
+        _mFreeCam = GameObject.Find("FreeLookCameraRig").GetComponent<FreeLookCam>();
+        _mFreeCam.SetTarget(mRoleObject.mTransform);
+
+
         // 添加角色移动控制器
         PlayerCtrlManager mPlayerCtrlManager = mRoleGo.GetComponent<PlayerCtrlManager>();
         if (mPlayerCtrlManager == null)

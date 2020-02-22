@@ -99,25 +99,69 @@ public class PlayerCtrlManager : MonoBehaviour
             m_AnimatorManager.Stand();
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
-		{
-            gameObject.GetComponent<SkillComponent>().DoSkill(600005);
-        }
+        //      if (Input.GetKeyDown(KeyCode.Q))
+        //{
+        //          gameObject.GetComponent<SkillComponent>().DoSkill(600005);
+        //      }
 
-		if(Input.GetKeyDown(KeyCode.W))
-		{
-            gameObject.GetComponent<SkillComponent>().DoSkill(600006);
-        }
+        //if(Input.GetKeyDown(KeyCode.W))
+        //{
+        //          gameObject.GetComponent<SkillComponent>().DoSkill(600006);
+        //      }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        //      if (Input.GetKeyDown(KeyCode.E))
+        //      {
+        //          gameObject.GetComponent<SkillComponent>().DoSkill(600007);
+        //      }
+
+        //      if (Input.GetKeyDown(KeyCode.R))
+        //      {
+        //          gameObject.GetComponent<SkillComponent>().DoSkill(600008);
+        //      }
+
+        if (Input.GetKeyDown(KeyCode.W)) //前  
         {
-            gameObject.GetComponent<SkillComponent>().DoSkill(600007);
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            m_AnimatorManager.RoleMoveCtrl();
+            Debug.Log("w");
+        }
+        if(Input.GetKeyUp(KeyCode.W))
+        {
+            m_AnimatorManager.Stand();
+        }
+        if (Input.GetKeyDown(KeyCode.S))    //后   
+        {
+            transform.Translate(Vector3.forward * -speed * Time.deltaTime);
+            transform.LookAt(-Vector3.forward);
+            m_AnimatorManager.RoleMoveCtrl();
+            Debug.Log("s");
+        }
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            m_AnimatorManager.Stand();
+        }
+        if (Input.GetKeyDown(KeyCode.A)) //左   
+        {
+            transform.Translate(Vector3.right * -speed * Time.deltaTime);
+            m_AnimatorManager.RoleMoveCtrl();
+            Debug.Log("a");
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            m_AnimatorManager.Stand();
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        //右        
+        {
+            transform.Translate(Vector3.right * speed * Time.deltaTime);
+            m_AnimatorManager.RoleMoveCtrl();
+            Debug.Log("d");
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            m_AnimatorManager.Stand();
         }
 
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            gameObject.GetComponent<SkillComponent>().DoSkill(600008);
-        }
 
         if (Input.GetKeyDown(KeyCode.O))
         {
@@ -126,7 +170,7 @@ public class PlayerCtrlManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
 		{
-            gameObject.GetComponent<SkillComponent>().DoSkill(600003);
+            gameObject.GetComponent<SkillComponent>().DoSkill(600005);
 		}
 		else if(Input.GetKeyUp(KeyCode.Alpha1))
 		{
@@ -135,7 +179,7 @@ public class PlayerCtrlManager : MonoBehaviour
 
 		if(Input.GetKeyDown(KeyCode.Alpha2))
 		{
-            gameObject.GetComponent<SkillComponent>().DoSkill(600002);
+            gameObject.GetComponent<SkillComponent>().DoSkill(600006);
 		}
 		else if(Input.GetKeyUp(KeyCode.Alpha2))
 		{
@@ -144,7 +188,7 @@ public class PlayerCtrlManager : MonoBehaviour
 
 		if(Input.GetKeyDown(KeyCode.Alpha3))
 		{
-            gameObject.GetComponent<SkillComponent>().DoSkill(600001);
+            gameObject.GetComponent<SkillComponent>().DoSkill(600007);
         }
 		else if(Input.GetKeyUp(KeyCode.Alpha3))
 		{
@@ -154,10 +198,14 @@ public class PlayerCtrlManager : MonoBehaviour
 
 		if(Input.GetKeyDown(KeyCode.Alpha4))
 		{
-//			m_AnimatorManager.BeatenAnim(1f);
-		}
+            gameObject.GetComponent<SkillComponent>().DoSkill(600008);
+        }
+        else if (Input.GetKeyUp(KeyCode.Alpha3))
+        {
+            PlayAttackSkillEnd();
+        }
 
-		if(Input.GetKeyDown(KeyCode.Alpha5))
+        if (Input.GetKeyDown(KeyCode.Alpha5))
 		{
 			//m_AnimatorManager.BlowupAnim(true);
 		}
