@@ -129,37 +129,21 @@ public class PlayerCtrlManager : MonoBehaviour
 		{
             gameObject.GetComponent<SkillComponent>().DoSkill(600005);
 		}
-		else if(Input.GetKeyUp(KeyCode.Alpha1))
-		{
-			PlayAttackSkillEnd();
-		}
 
 		if(Input.GetKeyDown(KeyCode.Alpha2))
 		{
             gameObject.GetComponent<SkillComponent>().DoSkill(600006);
-		}
-		else if(Input.GetKeyUp(KeyCode.Alpha2))
-		{
-			PlayAttackSkillEnd();
 		}
 
 		if(Input.GetKeyDown(KeyCode.Alpha3))
 		{
             gameObject.GetComponent<SkillComponent>().DoSkill(600007);
         }
-		else if(Input.GetKeyUp(KeyCode.Alpha3))
-		{
-			PlayAttackSkillEnd();
-		}
 
 
 		if(Input.GetKeyDown(KeyCode.Alpha4))
 		{
             gameObject.GetComponent<SkillComponent>().DoSkill(600008);
-        }
-        else if (Input.GetKeyUp(KeyCode.Alpha3))
-        {
-            PlayAttackSkillEnd();
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha5))
