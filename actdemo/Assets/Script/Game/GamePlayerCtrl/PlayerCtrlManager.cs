@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerCtrlManager : MonoBehaviour
 {
@@ -17,18 +18,45 @@ public class PlayerCtrlManager : MonoBehaviour
     private Ray ray;
     private bool suc;
 
-	void Awake()
+    private Transform m_Cam;
+
+    private Vector3 m_CamForward;             // The current forward direction of the camera
+    private Vector3 m_Move;
+
+    void Start()
     {
-        return;
-        GameObject parent = GameObject.Find("UI Root/Camera/JoyStickUI");
-        parent.SetActive(true);
-        mDirection = parent.transform.Find("BasePart/Direction");
-        VCAnalogJoystickBase.lockJoystick = true;
+        // get the transform of the main camera
+        if (Camera.main != null)
+        {
+            m_Cam = Camera.main.transform;
+        }
+        else
+        {
+            Debug.LogWarning(
+                "Warning: no main camera found. Third person character needs a Camera tagged \"MainCamera\", for camera-relative controls.", gameObject);
+            // we use self-relative controls in this case, which probably isn't what the user wants, but hey, we warned them!
+        }
     }
 
 	public void JoyCtrl()
 	{
-		if(m_AnimatorManager == null)
+        float h = CrossPlatformInputManager.GetAxis("Horizontal");
+        float v = CrossPlatformInputManager.GetAxis("Vertical");
+
+        if (m_Cam != null)
+        {
+            // calculate camera relative direction to move:
+            m_CamForward = Vector3.Scale(m_Cam.forward, new Vector3(1, 0, 1)).normalized;
+            m_Move = v * m_CamForward + h * m_Cam.right;
+            Debug.Log(m_Move);
+        }
+        else
+        {
+            // we use world-relative directions in the case of no main camera
+            m_Move = v * Vector3.forward + h * Vector3.right;
+        }
+
+        if (m_AnimatorManager == null)
 		{
 			if(this.gameObject.GetComponent<AnimatorComponent>())
 			{
@@ -41,7 +69,18 @@ public class PlayerCtrlManager : MonoBehaviour
 			}
 		}
 
+        Debug.Log(m_Move);
+        Debug.Log("h:" + h + "v:" + v);
 
+        if (h != 0.0f || v != 0.0f)
+        {
+            float degree = 180.0f / Mathf.PI * Mathf.Atan2(m_Move.z, m_Move.x);// + 180.0f;
+            PlayMove(m_Move.z, m_Move.x, degree);
+        }
+        else
+        {
+            m_AnimatorManager.Stand();
+        }
 
 		//if (mJoy == null)
 		//{
@@ -79,88 +118,6 @@ public class PlayerCtrlManager : MonoBehaviour
 		//	speed = 0;
 		//	m_AnimatorManager.Stand();
   //      }
-
-        if (Input.GetKeyDown(KeyCode.Mouse1))
-        {
-            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            suc = Physics.Raycast(ray, out hit, 1000);
-            transform.LookAt(hit.point);
-        }
-        if (suc)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, hit.point, Time.fixedDeltaTime * 5);
-            m_AnimatorManager.RoleMoveCtrl();
-        }
-
-        if (Vector3.Distance(transform.position, hit.point) < 0.001f)
-        {
-
-            suc = false;
-            m_AnimatorManager.Stand();
-        }
-
-        //      if (Input.GetKeyDown(KeyCode.Q))
-        //{
-        //          gameObject.GetComponent<SkillComponent>().DoSkill(600005);
-        //      }
-
-        //if(Input.GetKeyDown(KeyCode.W))
-        //{
-        //          gameObject.GetComponent<SkillComponent>().DoSkill(600006);
-        //      }
-
-        //      if (Input.GetKeyDown(KeyCode.E))
-        //      {
-        //          gameObject.GetComponent<SkillComponent>().DoSkill(600007);
-        //      }
-
-        //      if (Input.GetKeyDown(KeyCode.R))
-        //      {
-        //          gameObject.GetComponent<SkillComponent>().DoSkill(600008);
-        //      }
-
-        if (Input.GetKeyDown(KeyCode.W)) //前  
-        {
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
-            m_AnimatorManager.RoleMoveCtrl();
-            Debug.Log("w");
-        }
-        if(Input.GetKeyUp(KeyCode.W))
-        {
-            m_AnimatorManager.Stand();
-        }
-        if (Input.GetKeyDown(KeyCode.S))    //后   
-        {
-            transform.Translate(Vector3.forward * -speed * Time.deltaTime);
-            transform.LookAt(-Vector3.forward);
-            m_AnimatorManager.RoleMoveCtrl();
-            Debug.Log("s");
-        }
-        if (Input.GetKeyUp(KeyCode.S))
-        {
-            m_AnimatorManager.Stand();
-        }
-        if (Input.GetKeyDown(KeyCode.A)) //左   
-        {
-            transform.Translate(Vector3.right * -speed * Time.deltaTime);
-            m_AnimatorManager.RoleMoveCtrl();
-            Debug.Log("a");
-        }
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            m_AnimatorManager.Stand();
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        //右        
-        {
-            transform.Translate(Vector3.right * speed * Time.deltaTime);
-            m_AnimatorManager.RoleMoveCtrl();
-            Debug.Log("d");
-        }
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            m_AnimatorManager.Stand();
-        }
 
 
         if (Input.GetKeyDown(KeyCode.O))

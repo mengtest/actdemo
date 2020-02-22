@@ -25,15 +25,15 @@ public class RoleControllerManager : MonoBehaviour
     /// </summary>
     private CRoleObject mRoleObject = null;
 
-    /// <summary>
-    /// 主相机
-    /// </summary>
-    private GameObject mMainCamera = null;
+    ///// <summary>
+    ///// 主相机
+    ///// </summary>
+    //private GameObject mMainCamera = null;
 
-    /// <summary>
-    /// 相机跟随
-    /// </summary>
-    private CameraMove mCameraMove = null;
+    ///// <summary>
+    ///// 相机跟随
+    ///// </summary>
+    //private CameraMove mCameraMove = null;
 
     /// <summary>
     /// 相机抖动
