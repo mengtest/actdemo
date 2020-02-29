@@ -35,6 +35,8 @@ public class UIManager : MonoBehaviour
 
     public HUDUI mHUDUIPanel;
 
+    GameObject root;
+
     void Awake()
     {
         _Instance = this;
@@ -42,14 +44,15 @@ public class UIManager : MonoBehaviour
         mUIDic = new Dictionary<string, GameObject>();
         mHideUIStack = new Stack<string>();
 
-        UIRoot root = GameObject.Find("UI Root").GetComponent<UIRoot>();
-        float scale = root.activeHeight / mRectHeight;
-        mRectWidth *= scale;
-        mRectHeight *= scale;
+        //UIRoot root = GameObject.Find("UI Root").GetComponent<UIRoot>();
+        //float scale = root.activeHeight / mRectHeight;
+        //mRectWidth *= scale;
+        //mRectHeight *= scale;
+        root = GameObject.Find("Canvas");
 
         // 先隐藏摇杆
-        GameObject parent = GameObject.Find("UI Root/Camera/JoyStickUI");
-        parent.SetActive(false);
+        //GameObject parent = GameObject.Find("UI Root/Camera/JoyStickUI");
+        //parent.SetActive(false);
 
         // 获取头顶文字，伤害飘字，血条等panel
         CreateHUDUI();
@@ -106,14 +109,14 @@ public class UIManager : MonoBehaviour
             return null;
         }
 
-        GameObject go = NGUITools.AddChild(gameObject, uiPrefab);
-        go.SetActive(true);
-        go.name = uiName;
-        go.AddComponent(System.Type.GetType(uiName));
-        go.transform.localPosition = Vector3.zero;
-        go.transform.localScale = Vector3.one;
-        go.GetComponent<UIPanel>().depth = mCurrentMaxLayer++;
-        go.layer = LayerMask.NameToLayer("NGui");
+        uiPrefab.transform.SetParent(root.transform);
+        uiPrefab.SetActive(true);
+        uiPrefab.name = uiName;
+        uiPrefab.AddComponent(System.Type.GetType(uiName));
+        uiPrefab.transform.localPosition = Vector3.zero;
+        uiPrefab.transform.localScale = Vector3.one;
+        //uiPrefab.GetComponent<UIPanel>().depth = mCurrentMaxLayer++;
+        uiPrefab.layer = LayerMask.NameToLayer("UI");
 
         // 将当前界面隐藏
         if (mHideUIStack.Count > 0)
@@ -123,9 +126,9 @@ public class UIManager : MonoBehaviour
 
         mHideUIStack.Push(uiName);
 
-        mUIDic.Add(uiName, go);
+        mUIDic.Add(uiName, uiPrefab);
 
-        return go.transform;
+        return uiPrefab.transform;
     }
 
     public void CloseUI(string uiName)

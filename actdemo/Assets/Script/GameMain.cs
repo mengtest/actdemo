@@ -59,7 +59,6 @@ public class GameMain : MonoBehaviour
 
         XmlManager.Instance.LoadAllConfig();
 
-
         // 音效管理器
         AddComponent("AudioManager");
 
