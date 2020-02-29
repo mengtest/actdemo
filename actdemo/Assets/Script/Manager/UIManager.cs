@@ -33,7 +33,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public HUDUI mHUDUIPanel;
+    //public HUDUI mHUDUIPanel;
 
     GameObject root;
 
@@ -55,26 +55,26 @@ public class UIManager : MonoBehaviour
         //parent.SetActive(false);
 
         // 获取头顶文字，伤害飘字，血条等panel
-        CreateHUDUI();
+        //CreateHUDUI();
     }
 
-    void CreateHUDUI()
-    {
-        GameObject go = ResourceManager.Instance.GetUIPrefab("HUDUI");
-        if (go == null)
-        {
-            return;
-        }
+    //void CreateHUDUI()
+    //{
+    //    GameObject go = ResourceManager.Instance.GetUIPrefab("HUDUI");
+    //    if (go == null)
+    //    {
+    //        return;
+    //    }
 
-        go = NGUITools.AddChild(gameObject, go);
-        if (go == null)
-        {
-            return;
-        }
+    //    go = NGUITools.AddChild(gameObject, go);
+    //    if (go == null)
+    //    {
+    //        return;
+    //    }
 
-        go.name = "HUDUI";
-        mHUDUIPanel = go.AddComponent<HUDUI>();
-    }
+    //    go.name = "HUDUI";
+    //    mHUDUIPanel = go.AddComponent<HUDUI>();
+    //}
 
     public Transform OpenUI(string uiName)
     {
