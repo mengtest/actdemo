@@ -14,7 +14,7 @@ public class GameMain : MonoBehaviour
     {
         // 添加UI管理器
         //       GameObject.Find("UI Root/Camera").AddComponent<UIManager>();
-//        AddComponent("UIManager");
+        AddComponent("UIManager");
 
         // 计时器
         AddComponent("TimerManager");
@@ -55,7 +55,7 @@ public class GameMain : MonoBehaviour
 
     void Start()
     {
- //       UIManager.Instance.OpenUI("LoadingUI");
+        UIManager.Instance.OpenUI("ULoginUI");
 
         XmlManager.Instance.LoadAllConfig();
 

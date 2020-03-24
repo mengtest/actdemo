@@ -48,7 +48,7 @@ public class UIManager : MonoBehaviour
         //float scale = root.activeHeight / mRectHeight;
         //mRectWidth *= scale;
         //mRectHeight *= scale;
-        root = GameObject.Find("Canvas");
+        root = GameObject.Find("UIRoot");
 
         // 先隐藏摇杆
         //GameObject parent = GameObject.Find("UI Root/Camera/JoyStickUI");
@@ -109,7 +109,7 @@ public class UIManager : MonoBehaviour
             return null;
         }
 
-        uiPrefab.transform.SetParent(root.transform);
+        //uiPrefab.transform.SetParent(root.transform);
         uiPrefab.SetActive(true);
         uiPrefab.name = uiName;
         uiPrefab.AddComponent(System.Type.GetType(uiName));

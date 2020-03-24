@@ -42,12 +42,8 @@ public class SceneManager : MonoBehaviour
         {
             return;
         }
-
-        mLoadingUI = GameObject.Find("Canvas/loading").GetComponent<LoadingUI>();
-        if (mLoadingUI == null)
-        {
-            return;
-        }
+        UIManager.Instance.CloseAllUI();
+        UIManager.Instance.OpenUI("ULoadingUI");
 
         StartCoroutine(LoadScene(sceneName));
     }

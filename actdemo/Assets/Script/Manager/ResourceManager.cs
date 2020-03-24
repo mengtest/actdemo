@@ -100,7 +100,7 @@ public class ResourceManager
             return go;
         }
 
-        return LoadObject(uiName, "UI/Prefab/") as GameObject;
+        return GameObject.Instantiate(LoadObject(uiName, "UI/Prefab/")) as GameObject;
     }
 
     /// <summary>
