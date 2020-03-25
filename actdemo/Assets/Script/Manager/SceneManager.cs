@@ -17,7 +17,7 @@ public class SceneManager : MonoBehaviour
 
     private AsyncOperation mAsyncOper;
 
-    private LoadingUI mLoadingUI;
+    private ULoadingUI mLoadingUI;
 
     private string mCurrentSceneName = "";
     public string CurrentSceneName
@@ -44,6 +44,7 @@ public class SceneManager : MonoBehaviour
         }
         UIManager.Instance.CloseAllUI();
         UIManager.Instance.OpenUI("ULoadingUI");
+        mLoadingUI = GameObject.Find("ULoadingUI").GetComponent<ULoadingUI>();
 
         StartCoroutine(LoadScene(sceneName));
     }
@@ -99,7 +100,7 @@ public class SceneManager : MonoBehaviour
 
         if (mAsyncOper.isDone)
         {
-//            UIManager.Instance.CloseUI("LoadingUI");
+            UIManager.Instance.CloseUI("ULoadingUI");
 
             mLoadingUI = null;
             mAsyncOper = null;

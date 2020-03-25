@@ -2,9 +2,14 @@
 using UnityEngine;
 using System.Collections;
 
-public class LoadingUI : MonoBehaviour {
+public class ULoadingUI : MonoBehaviour {
 
     private Slider mScrollbar;
+
+    private void Start()
+    {
+        mScrollbar = GameObject.Find("ULoadingUI/loading").GetComponent<Slider>();
+    }
 
     //void Awake()
     //{
@@ -20,7 +25,7 @@ public class LoadingUI : MonoBehaviour {
     {
         if (mScrollbar == null)
         {
-            mScrollbar = gameObject.GetComponent<Slider>();
+            //mScrollbar = gameObject.GetComponent<Slider>();
             mScrollbar.value = 0.0f;
         }
 
