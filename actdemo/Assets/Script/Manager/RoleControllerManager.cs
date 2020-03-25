@@ -130,13 +130,16 @@ public class RoleControllerManager : MonoBehaviour
             mRoleObject.mGameObject.AddComponent<AudioListener>();
         }
 
+        UIManager.Instance.OpenUI("UHUDUI");
+        UIManager.Instance.mHUDUIPanel = GameObject.Find("UHUDUI").GetComponent<UHUDUI>();
+
         // 添加角色逻辑组件
         mRoleObject.AddComponent<FindingPathComponent>();
         mRoleObject.AddComponent<AnimatorComponent>();
         mRoleObject.AddComponent<SkillComponent>();
         mRoleObject.AddComponent<ViewComponent>();
         mRoleObject.AddComponent<MoveComponent>();
-
+            
         mRoleObject.AddComponent<RestoreComponent>();
         mRoleObject.AddComponent<InjuredComponent>();
         
