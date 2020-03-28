@@ -42,7 +42,7 @@ public class GameStartButtonUI : MonoBehaviour {
         }
 
         SceneManager.Instance.ChangeScene("TestScene2");
-        Debug.Log("Button Clicked. ClickHandler.");
+        //Debug.Log("Button Clicked. ClickHandler.");
 //        gameObject.SetActive(false);
 //        mGame.SetActive(true);
     }

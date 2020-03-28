@@ -217,7 +217,7 @@ public class ConnectStage
     /// <returns>连接成败</returns>
     public static bool ConnectTo(string strServerIP, int iPort, string strUserName, string strPassword, string strValidatestring = "", int iReconnect = 2)
     {
-        NGUIDebug.Log("ConnectTo::", strUserName, ":", strPassword, ":", strValidatestring);
+        //Debug.Log("ConnectTo::", strUserName, ":", strPassword, ":", strValidatestring);
         if (!string.IsNullOrEmpty(strServerIP))
         {
             TimerManager.AddTimerRepeat("CheckServerListen", 0.5f, CheckConnectToMember);
@@ -485,31 +485,31 @@ public class ConnectStage
             Game game = Game.Instance;
             if (game == null)
             {
-                NGUIDebug.Log("on_connect_block: game is null");
+                //Debug.Log("on_connect_block: game is null");
                 return;
             }
             if (!game.mbEnterGame)
             {
-                NGUIDebug.Log("不在游戏中不进行断线重连");
+                //Debug.Log("不在游戏中不进行断线重连");
                 return;
             }
             //测试用，看看是否是因为这里面没有断线重连
             if (!mbConnected || isChangeRole)
             {
-                NGUIDebug.Log("----------------- mbConnected =" + mbConnected);
-                NGUIDebug.Log("----------------- isChangeRole =" + isChangeRole);
+                //Debug.Log("----------------- mbConnected =" + mbConnected);
+                //Debug.Log("----------------- isChangeRole =" + isChangeRole);
                 //return;
             }
 
             ///被顶下线不重连
             if (LoginStage.miErrorCode == 21006)
             {
-                NGUIDebug.Log("被顶下线不重连");
+                //Debug.Log("被顶下线不重连");
                 return;
             }
             if (mbTryingConnect)
             {
-                NGUIDebug.Log("尝试重连中。这里不重连");
+                //Debug.Log("尝试重连中。这里不重连");
                 return;
             }
 
@@ -520,7 +520,7 @@ public class ConnectStage
                 mbNeedReConnect = true;
                 if (game.mGameSock == null)
                 {
-                    NGUIDebug.Log("Error!! ConnectState::on_connect_fail (game or game.mGameSock) is null");
+                    //Debug.Log("Error!! ConnectState::on_connect_fail (game or game.mGameSock) is null");
                     LogSystem.LogError("Error!! ConnectState::on_connect_fail (game or game.mGameSock) is null");
                     return;
                 }
@@ -579,7 +579,7 @@ public class ConnectStage
     */
     public static void on_close(VarList args)
     {
-        NGUIDebug.Log("on_close" + mbConnected + " " + isChangeRole);
+        //Debug.Log("on_close" + mbConnected + " " + isChangeRole);
         if (!mbConnected || isChangeRole)
             return;
 
@@ -594,7 +594,7 @@ public class ConnectStage
 
         mbTryingConnect = true;
 
-        NGUIDebug.Log("on_close " + mbLoginSuccess);
+        //Debug.Log("on_close " + mbLoginSuccess);
         if (mbLoginSuccess && ObjectManager.mRole != null)
         {
             mbNeedReConnect = true;
@@ -604,7 +604,7 @@ public class ConnectStage
                 LogSystem.Log("Error!! ConnectState::on_connect_fail (game or game.mGameSock) is null");
                 return;
             }
-            NGUIDebug.Log("on_close game.mbPaused" + game.mbPaused);
+            //Debug.Log("on_close game.mbPaused" + game.mbPaused);
             if (!game.mbPaused)
             {
                 OnNetBlockOrClose();
@@ -651,7 +651,7 @@ public class ConnectStage
     {
         try
         {
-            NGUIDebug.Log("OnNetBlockOrClose");
+            //Debug.Log("OnNetBlockOrClose");
             gConnectCount = 0;
             WorldStage.mbReConnected = true;
             //启动断线重连,重新发送登录消息
@@ -666,7 +666,7 @@ public class ConnectStage
                 WorldStage.RegistCallback(false);
                 ///第一次连接失败，添加心跳开始持续一分钟连接12次，依然没有连上认为断开
                 ConnectStage.ConnecToMember(mstrServer, miPort, mstrUser, mstrPsd, mstrValidateString, 2);
-                NGUIDebug.Log("第一次重连");
+                //Debug.Log("第一次重连");
                 TimerManager.AddTimerRepeat("OnNetBlockTimer", 5.0f, OnNetBlockTimer);
                 LogSystem.LogWarning("First block connect try");
                 //SystemWaitPanel.Start(99999999);
@@ -689,7 +689,7 @@ public class ConnectStage
             ConnectStage.RegistCallback(false);
             LoginStage.RegistCallback(false);
             WorldStage.RegistCallback(false);
-            NGUIDebug.Log("第二次重连");
+            //Debug.Log("第二次重连");
             ConnectStage.ConnecToMember(mstrServer, miPort, mstrUser, mstrPsd, mstrValidateString, 2);
             
             gConnectCount++;

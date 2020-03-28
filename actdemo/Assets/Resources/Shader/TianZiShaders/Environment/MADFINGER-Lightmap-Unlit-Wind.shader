@@ -122,7 +122,7 @@ inline float4 AnimateVertex2(float4 pos, float3 normal, float4 animParams,float4
 
 	Pass {
 		CGPROGRAM
-		#pragma debug
+		#pragma //Debug
 		#pragma vertex vert
 		#pragma fragment frag
 		#pragma fragmentoption ARB_precision_hint_fastest		

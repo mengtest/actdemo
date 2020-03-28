@@ -264,7 +264,7 @@ public class ExportSceneToObj : EditorWindow
         }
         catch (System.Exception err)
         {
-            Debug.LogError("Error saving file: " + err.Message);
+            //Debug.LogError("Error saving file: " + err.Message);
         }
     }
 

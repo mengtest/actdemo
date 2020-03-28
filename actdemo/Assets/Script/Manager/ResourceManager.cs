@@ -225,10 +225,10 @@ public class ResourceManager
     /// </summary>
     /// <param name="atlas"></param>
     /// <returns></returns>
-    public UIAtlas GetAtlas(string atlas)
-    {
-        return (LoadObject(atlas, ResourceDefine.UIAtlasPath) as GameObject).GetComponent<UIAtlas>();
-    }
+    //public UIAtlas GetAtlas(string atlas)
+    //{
+    //    return (LoadObject(atlas, ResourceDefine.UIAtlasPath) as GameObject).GetComponent<UIAtlas>();
+    //}
 
     /// <summary>
     /// 获得指定字体

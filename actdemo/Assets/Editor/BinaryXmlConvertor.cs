@@ -113,10 +113,10 @@ public class BinaryXmlConvertor : EditorWindow
                 }
                 catch (System.Exception exception)
                 {
-                    Debug.LogError("Error:" + path);
-                    Debug.LogError(exception.Message);
-                    Debug.LogError(exception.StackTrace);
-                    Debug.LogError("");
+                    //Debug.LogError("Error:" + path);
+                    //Debug.LogError(exception.Message);
+                    //Debug.LogError(exception.StackTrace);
+                    //Debug.LogError("");
                 }
             }
             else

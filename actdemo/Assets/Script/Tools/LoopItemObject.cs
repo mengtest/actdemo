@@ -11,7 +11,7 @@ public class LoopItemObject
     /// <summary>
     /// The widget.
     /// </summary>
-    public UIWidget widget;
+    //public UIWidget widget;
 
     /// <summary>
     /// 本item，在实际整个scrollview中的索引位置，

@@ -24,12 +24,12 @@ public class PromptManager : MonoBehaviour
             return;
         }
 
-        PromptUI ui = trans.GetComponent<PromptUI>();
-        if (ui == null)
-        {
-            return;
-        }
+        //PromptUI ui = trans.GetComponent<PromptUI>();
+        //if (ui == null)
+        //{
+        //    return;
+        //}
 
-        ui.SetContent(content);
+        //ui.SetContent(content);
     }
 }

@@ -157,9 +157,9 @@ public class FightManager : MonoBehaviour
             return;
         }
 
-        GameObject monsterParent = NGUITools.AddChild(gameObject);
-        monsterParent.transform.localPosition = Vector3.zero;
-        monsterParent.name = "Monsters";
+        //GameObject monsterParent = NGUITools.AddChild(gameObject);
+        //monsterParent.transform.localPosition = Vector3.zero;
+        //monsterParent.name = "Monsters";
 
         for (int i = 0; i < count; ++i)
         {
@@ -194,10 +194,15 @@ public class FightManager : MonoBehaviour
             cObj.mIndex = mIndex;
 
             go.name = monsterId.ToString();
-            go.transform.parent = monsterParent.transform;
+            //go.transform.parent = monsterParent.transform;
             go.transform.position = postion;
             go.transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
             go.transform.localScale = new Vector3(scale, scale, scale);
+
+            //ui
+            GameObject uiPrefab = ResourceManager.Instance.GetUIPrefab("UMonsterBloodUI");
+            Vector2 position2 = Camera.main.WorldToScreenPoint(postion);
+            uiPrefab.transform.position = position2;
 
             cObj.mGameObject = go;
             cObj.mTransform = go.transform;
@@ -233,13 +238,13 @@ public class FightManager : MonoBehaviour
         }
 
         GameObject parent = GameObject.Find("UI Root/Camera");
-        GameObject go = NGUITools.AddChild(parent, uiPrefab);
-        go.name = "FightUI";
-        go.AddComponent(System.Type.GetType("FightUI"));
-        go.transform.localPosition = Vector3.zero;
-        go.transform.localScale = Vector3.one;
+        //GameObject go = NGUITools.AddChild(parent, uiPrefab);
+        //go.name = "FightUI";
+        //go.AddComponent(System.Type.GetType("FightUI"));
+        //go.transform.localPosition = Vector3.zero;
+        //go.transform.localScale = Vector3.one;
 
-        mFightUI = go.GetComponent<FightUI>();
+        //mFightUI = go.GetComponent<FightUI>();
     }
 
     /// <summary>

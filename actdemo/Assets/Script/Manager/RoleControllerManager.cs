@@ -85,7 +85,6 @@ public class RoleControllerManager : MonoBehaviour
             return;
         }
 
-        mRoleGo = NGUITools.AddChild(gameObject, mRoleGo);
         mRoleGo.name = roleId.ToString();
         if (pos.Equals(Vector3.zero))
         {

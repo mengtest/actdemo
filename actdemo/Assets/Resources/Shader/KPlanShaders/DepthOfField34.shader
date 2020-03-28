@@ -169,7 +169,7 @@
 		return tapHigh; 
 	}	
 	
-	half4 fragDofApplyBgDebug (v2fDofApply i) : COLOR {		
+	half4 fragDofApplyBg//Debug (v2fDofApply i) : COLOR {		
 		half4 tapHigh = tex2D (_MainTex, i.uv.xy); 	
 		
 		half4 tapLow = tex2D (_TapLowBackground, i.uv.xy);
@@ -201,7 +201,7 @@
 		return lerp (fgColor, fgBlur, saturate(fgBlur.a));
 	}	
 	
-	half4 fragDofApplyFgDebug (v2fDofApply i) : COLOR {
+	half4 fragDofApplyFg//Debug (v2fDofApply i) : COLOR {
 		half4 fgBlur = tex2D(_TapLowForeground, i.uv.xy);		
 					
 		half4 fgColor = tex2D(_MainTex,i.uv.xy);
@@ -348,7 +348,7 @@ Subshader {
       #pragma exclude_renderers flash
       #pragma fragmentoption ARB_precision_hint_fastest
       #pragma vertex vertDofApply
-      #pragma fragment fragDofApplyFgDebug
+      #pragma fragment fragDofApplyFg//Debug
 
       ENDCG
   	}
@@ -364,7 +364,7 @@ Subshader {
       #pragma exclude_renderers flash
       #pragma fragmentoption ARB_precision_hint_fastest
       #pragma vertex vertDofApply
-      #pragma fragment fragDofApplyBgDebug
+      #pragma fragment fragDofApplyBg//Debug
 
       ENDCG
   	}

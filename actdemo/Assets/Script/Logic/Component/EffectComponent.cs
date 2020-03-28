@@ -13,7 +13,7 @@ public class EffectComponent : IComponent {
 
 	public void AttackEffect(string effectName ,float time = 2)
 	{
-		Debug.Log("effectName = "+effectName);
+		//Debug.Log("effectName = "+effectName);
 		string pathName ="Effect/Skill/"+effectName;
 	
 		GameObject effectGame = GetEffectPrefab(pathName);

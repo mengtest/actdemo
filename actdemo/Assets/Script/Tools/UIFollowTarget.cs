@@ -53,13 +53,13 @@ public class UIFollowTarget : MonoBehaviour
 	{
 		if (target != null)
 		{
-			if (gameCamera == null) gameCamera = NGUITools.FindCameraForLayer(target.gameObject.layer);
-			if (uiCamera == null) uiCamera = NGUITools.FindCameraForLayer(gameObject.layer);
+			//if (gameCamera == null) gameCamera = NGUITools.FindCameraForLayer(target.gameObject.layer);
+			//if (uiCamera == null) uiCamera = NGUITools.FindCameraForLayer(gameObject.layer);
 			SetVisible(false);
 		}
 		else
 		{
-			Debug.LogError("Expected to have 'target' set to a valid transform", this);
+			//Debug.LogError("Expected to have 'target' set to a valid transform", this);
 			enabled = false;
 		}
 	}
@@ -74,7 +74,7 @@ public class UIFollowTarget : MonoBehaviour
 
 		for (int i = 0, imax = mTrans.childCount; i < imax; ++i)
 		{
-			NGUITools.SetActive(mTrans.GetChild(i).gameObject, val);
+			//NGUITools.SetActive(mTrans.GetChild(i).gameObject, val);
 		}
 	}
 

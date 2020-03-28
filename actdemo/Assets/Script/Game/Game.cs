@@ -296,7 +296,6 @@ public class Game : MonoBehaviour
     //2秒断线重连
     private void OnRestNet()
     {
-        NGUIDebug.Log("Game::OnRestNet 断线重连");
         //断线重连需要 一直显示转圈 不显示提示
         //SystemWaitPanel.Start(99999999);
         VarList varlist = VarList.GetVarList();
@@ -309,7 +308,6 @@ public class Game : MonoBehaviour
     /// </summary>
     public void RestTime()
     {
-        NGUIDebug.Log("Game::RestTime 断线重连停止计时");
         //TimerManager.Destroy("ReChooseRoleFailedTime");
     }
 

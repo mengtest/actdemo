@@ -32,8 +32,8 @@ public class RestoreComponent : IComponent
 
 	private AnimatorComponent mAnimatorManager;
 
-    private UISlider mBar;
-    private UILabel mValue;
+    //private UISlider mBar;
+    //private UILabel mValue;
 
     public override void SetObject(IObject obj)
     {
@@ -153,8 +153,8 @@ public class RestoreComponent : IComponent
 
             RangeTools.MotifyRoleAoi();
 
-            TweenAlpha tween = TweenAlpha.Begin(mObj.mGameObject, 3.0f, 1.0f);
-            tween.AddOnFinished(EnemyDisappare);
+            //TweenAlpha tween = TweenAlpha.Begin(mObj.mGameObject, 3.0f, 1.0f);
+            //tween.AddOnFinished(EnemyDisappare);
         }
     }
 

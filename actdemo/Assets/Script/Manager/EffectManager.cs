@@ -121,11 +121,11 @@ public class EffectManager : MonoBehaviour
             }
 
             GameObject parent = ep[i].mEffectFollowAction ? animator.gameObject : gameObject;
-            go = NGUITools.AddChild(parent, go);
-            if (go == null)
-            {
-                continue;
-            }
+            //go = NGUITools.AddChild(parent, go);
+            //if (go == null)
+            //{
+            //    continue;
+            //}
 
             // 如果不跟随，需要玩家当前位置作为特效播放位置
             if (!ep[i].mEffectFollowAction)
@@ -192,13 +192,13 @@ public class EffectManager : MonoBehaviour
             parent = parent.transform.Find("Bip01").gameObject;
         }
 
-        go = NGUITools.AddChild(parent, go);
-        if (go == null)
-        {
-            return;
-        }
+        //go = NGUITools.AddChild(parent, go);
+        //if (go == null)
+        //{
+        //    return;
+        //}
 
-        go.SetActive(true);
+        //go.SetActive(true);
     }
 
     public void SkillHitHighLightEffect(GameObject go)

@@ -7,7 +7,7 @@ public class FightUI : MonoBehaviour
     /// <summary>
     /// 主角翻滚按钮
     /// </summary>
-    private UIEventListener mRollButton;
+    //private UIEventListener mRollButton;
 
     /// <summary>
     /// 角色1切换
@@ -19,8 +19,8 @@ public class FightUI : MonoBehaviour
     /// </summary>
     private GameObject mChangeRoleS;
 
-    private UISprite sprite;
-    private UISprite sprite1;
+    //private UISprite sprite;
+    //private UISprite sprite1;
 
     /// <summary>
     /// 主角技能组件
@@ -41,7 +41,7 @@ public class FightUI : MonoBehaviour
     private GameObject mComboNumber;
 
     private Vector3 mPosition;
-    private TweenPosition mTweenBackground;
+    //private TweenPosition mTweenBackground;
     private int[] indexarr = { 0, 1, 2, 3, 4, 5 };
 
     public class SkillUIIndex
@@ -49,7 +49,7 @@ public class FightUI : MonoBehaviour
         public int mIndex;
         public bool mCanUse;
         public GameObject mSkillIcon;
-        public UISprite mCDSprite;
+        //public UISprite mCDSprite;
     }
 
     /// <summary>
@@ -97,28 +97,28 @@ public class FightUI : MonoBehaviour
             
             kvp.Value.mSkillIcon = transform.Find("BottomRight/Skill_" + indexarr[index].ToString()).gameObject;
             indexarr[index] = kvp.Key;
-            kvp.Value.mSkillIcon.GetComponent<UIEventListener>().onClick = OnClickSkill;
-            kvp.Value.mSkillIcon.GetComponent<UIEventListener>().onPress = OnPressSkill;
+            //kvp.Value.mSkillIcon.GetComponent<UIEventListener>().onClick = OnClickSkill;
+            //kvp.Value.mSkillIcon.GetComponent<UIEventListener>().onPress = OnPressSkill;
             kvp.Value.mSkillIcon.name = "Skill_" + kvp.Key;
             kvp.Value.mSkillIcon.SetActive(true);
             
-            kvp.Value.mCDSprite = kvp.Value.mSkillIcon.transform.Find("CDSprite").GetComponent<UISprite>();
+            //kvp.Value.mCDSprite = kvp.Value.mSkillIcon.transform.Find("CDSprite").GetComponent<UISprite>();
 
             ++index;
         }
         
-        mRollButton = transform.Find("BottomRight/Roll").GetComponent<UIEventListener>();
-        mRollButton.onClick += OnClickRoll;
+        //mRollButton = transform.Find("BottomRight/Roll").GetComponent<UIEventListener>();
+        //mRollButton.onClick += OnClickRoll;
 
         mChangeRoleF = transform.Find("touxiang/Button1").gameObject;
         mChangeRoleS = transform.Find("touxiang/Button2").gameObject;
 
-        mChangeRoleF.GetComponent<UIEventListener>().onClick += OnClickChangeRole;
-        sprite1 = mChangeRoleF.transform.Find("Sprite").GetComponent<UISprite>();
-        sprite1.atlas = ResourceManager.Instance.GetAtlas("Fight");
+        //mChangeRoleF.GetComponent<UIEventListener>().onClick += OnClickChangeRole;
+        //sprite1 = mChangeRoleF.transform.Find("Sprite").GetComponent<UISprite>();
+        //sprite1.atlas = ResourceManager.Instance.GetAtlas("Fight");
 
-        sprite = transform.Find("touxiang/touxiang").GetComponent<UISprite>();
-        sprite.atlas = ResourceManager.Instance.GetAtlas("Fight");
+        //sprite = transform.Find("touxiang/touxiang").GetComponent<UISprite>();
+        //sprite.atlas = ResourceManager.Instance.GetAtlas("Fight");
 
         mCombo = transform.Find("TopRight").gameObject;
         mComboBackground = transform.Find("TopRight/Background").gameObject;
@@ -140,10 +140,10 @@ public class FightUI : MonoBehaviour
 
         mCombo.SetActive(true);
 
-        if (mTweenBackground != null)
-        {
-            mTweenBackground.ResetToBeginning();
-        }
+        //if (mTweenBackground != null)
+        //{
+        //    mTweenBackground.ResetToBeginning();
+        //}
         
         mComboBackground.transform.localPosition = Vector3.zero;
         mComboBackground.SetActive(true);
@@ -153,13 +153,13 @@ public class FightUI : MonoBehaviour
         {
             if (mComboGrid.transform.childCount < i + 1)
             {
-                NGUITools.AddChild(mComboGrid, mComboNumber);
+                //NGUITools.AddChild(mComboGrid, mComboNumber);
             }
 
             Transform trans = mComboGrid.transform.GetChild(i);
             if (trans == null)
             {
-                trans = NGUITools.AddChild(mComboGrid, mComboNumber).transform;
+                //trans = NGUITools.AddChild(mComboGrid, mComboNumber).transform;
             }
 
             if (trans == null)
@@ -168,14 +168,14 @@ public class FightUI : MonoBehaviour
             }
 
             trans.name = strNum[i].ToString();
-            trans.GetComponent<UISprite>().spriteName = "combo_" + strNum[i].ToString();
+            //trans.GetComponent<UISprite>().spriteName = "combo_" + strNum[i].ToString();
             trans.gameObject.SetActive(true);
         }
 
-        mComboGrid.GetComponent<UIGrid>().Reposition();
+        //mComboGrid.GetComponent<UIGrid>().Reposition();
 
-        TweenPosition tween = TweenPosition.Begin(mComboGrid, 0.01f, mComboGrid.transform.localPosition + new Vector3(0.0f, 20.0f, 0.0f));
-        EventDelegate.Add(tween.onFinished, ChangePosition);
+        //TweenPosition tween = TweenPosition.Begin(mComboGrid, 0.01f, mComboGrid.transform.localPosition + new Vector3(0.0f, 20.0f, 0.0f));
+        //EventDelegate.Add(tween.onFinished, ChangePosition);
 
         // 重置Combo时间
         StopCoroutine("ComboDisappear");
@@ -184,13 +184,13 @@ public class FightUI : MonoBehaviour
 
     void ChangePosition()
     {
-        GameObject go = TweenPosition.current.gameObject;
-        if (go == null)
-        {
-            return;
-        }
+        //GameObject go = TweenPosition.current.gameObject;
+        //if (go == null)
+        //{
+        //    return;
+        //}
 
-        TweenPosition.Begin(go, 0.01f, mPosition);
+        //TweenPosition.Begin(go, 0.01f, mPosition);
     }
 
     IEnumerator ComboDisappear()
@@ -206,8 +206,8 @@ public class FightUI : MonoBehaviour
     {
         UtilTools.DestroyChild(mComboGrid);
 
-        mTweenBackground = TweenPosition.Begin(mComboBackground, 0.2f, new Vector3(350.0f, 0.0f, 0.0f));
-        EventDelegate.Add(mTweenBackground.onFinished, ComboMoveOut);
+        //mTweenBackground = TweenPosition.Begin(mComboBackground, 0.2f, new Vector3(350.0f, 0.0f, 0.0f));
+        //EventDelegate.Add(mTweenBackground.onFinished, ComboMoveOut);
     }
 
     void ComboMoveOut()
@@ -273,19 +273,19 @@ public class FightUI : MonoBehaviour
     /// <param name="go"></param>
     void OnClickChangeRole(GameObject go)
     {
-        if (sprite.spriteName == "nan")
-        {
-            RoleControllerManager.Instance.CreateRole(100008);
+        //if (sprite.spriteName == "nan")
+        //{
+        //    RoleControllerManager.Instance.CreateRole(100008);
             
-            sprite1.spriteName = "nan";
-            sprite.spriteName = "zhaoyun";
-        }
-        else
-        {
-            RoleControllerManager.Instance.CreateRole(140008);
-            sprite1.spriteName = "zhaoyun";
-            sprite.spriteName = "nan";
-        }
+        //    sprite1.spriteName = "nan";
+        //    sprite.spriteName = "zhaoyun";
+        //}
+        //else
+        //{
+        //    RoleControllerManager.Instance.CreateRole(140008);
+        //    sprite1.spriteName = "zhaoyun";
+        //    sprite.spriteName = "nan";
+        //}
 
 
         mSkillCom = ObjectManager.mRole.GetComponent<SkillComponent>();
@@ -326,7 +326,7 @@ public class FightUI : MonoBehaviour
             kvp.Value.mSkillIcon.name = "Skill_" + kvp.Key;
             kvp.Value.mSkillIcon.SetActive(true);
 
-            kvp.Value.mCDSprite = kvp.Value.mSkillIcon.transform.Find("CDSprite").GetComponent<UISprite>();
+            //kvp.Value.mCDSprite = kvp.Value.mSkillIcon.transform.Find("CDSprite").GetComponent<UISprite>();
 
             ++index;
         }
@@ -361,6 +361,6 @@ public class FightUI : MonoBehaviour
             return;
         }
 
-        mSkillIndexDic[skillId].mCDSprite.fillAmount = value;
+        //mSkillIndexDic[skillId].mCDSprite.fillAmount = value;
     }
 }

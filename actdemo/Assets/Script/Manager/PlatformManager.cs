@@ -35,9 +35,9 @@ public class PlatformManager : MonoBehaviour
 
         // 创建平台对象
 #if UNITY_ANDROID && !UNITY_EDITOR
-        AndroidPlugins.Instance.InitPlugins(screenOrientation, isDebug, isAnysdk);
+        AndroidPlugins.Instance.InitPlugins(screenOrientation, is//Debug, isAnysdk);
 #elif UNITY_IPHONE && !UNITY_EDITOR
-        iOSPlugins.Instance.InitPlugins(screenOrientation, isDebug, isAnysdk);
+        iOSPlugins.Instance.InitPlugins(screenOrientation, is//Debug, isAnysdk);
 #else
         if (mPlatformInitFinished != null)
         {

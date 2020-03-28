@@ -111,7 +111,7 @@ namespace ThinksquirrelSoftware.Utilities
 			
 			if (cameras.Count < 1)
 			{
-				Debug.LogError("Camera Shake: No cameras assigned in the inspector!");
+				//Debug.LogError("Camera Shake: No cameras assigned in the inspector!");
 			}
 			instance = this;
 		}

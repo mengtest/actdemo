@@ -27,8 +27,8 @@ Shader "Snail/Bumped Specular Point Light Cutout"
 			#pragma fragmentoption ARB_precision_hint_fastest
 			#include "UnityCG.cginc"
  
- 			// To debug
-			//#pragma debug
+ 			// To //Debug
+			//#pragma //Debug
 
 			sampler2D _MainTex;
 			sampler2D _BumpMap; 

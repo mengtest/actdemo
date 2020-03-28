@@ -66,11 +66,11 @@ public class UIManager : MonoBehaviour
             return;
         }
 
-        go = NGUITools.AddChild(gameObject, go);
-        if (go == null)
-        {
-            return;
-        }
+        //go = NGUITools.AddChild(gameObject, go);
+        //if (go == null)
+        //{
+        //    return;
+        //}
 
         go.name = "UHUDUI";
         mHUDUIPanel = go.AddComponent<UHUDUI>();

@@ -37,8 +37,8 @@ Shader "Snail/Bumped Specular Point Light Cutout Add" {
 			#include "AutoLight.cginc"
 			#define INTERNAL_DATA
  
- 			// To debug
-			//#pragma debug
+ 			// To //Debug
+			//#pragma //Debug
 
 			sampler2D _MainTex;
 			sampler2D _BumpMap; 

@@ -17,7 +17,7 @@ namespace SysUtils
             {
                 if (value > Math.Pow(2, (end - begin + 1)))
                 {
-                    //Debug.WriteLine("value > Math.Pow(2, (end - begin)) Error");
+                    ////Debug.WriteLine("value > Math.Pow(2, (end - begin)) Error");
                     return false;
                 }
 
@@ -28,7 +28,7 @@ namespace SysUtils
                 temp = (ushort)(temp >> left_move);
                 if (temp > 0)
                 {
-                    //Debug.WriteLine("temp > 0 Error");
+                    ////Debug.WriteLine("temp > 0 Error");
                     return false;
                 }
             }

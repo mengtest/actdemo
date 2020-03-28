@@ -153,8 +153,8 @@ namespace TinyBinaryXml
 					}
 					else
 					{
-                        //UnityEngine.Debug.LogError("Ignore yyy of <nodeA>xxx<nodeB/>yyy<nodeA/>");
-                        //UnityEngine.Debug.LogError("Ignore:" + subXmlNode.InnerText);
+                        //UnityEngine.//Debug.LogError("Ignore yyy of <nodeA>xxx<nodeB/>yyy<nodeA/>");
+                        //UnityEngine.//Debug.LogError("Ignore:" + subXmlNode.InnerText);
 					}
 				}
 			}

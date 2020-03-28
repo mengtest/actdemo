@@ -98,7 +98,6 @@ namespace Fm_ClientNet
 
             public int OnSockClose(UserSock sock)
             {
-                NGUIDebug.Log("OnSockClose");
                 m_gamesock.SetConnected(false);
                 if (null != m_gamesock.m_lgsockcall)
                 {

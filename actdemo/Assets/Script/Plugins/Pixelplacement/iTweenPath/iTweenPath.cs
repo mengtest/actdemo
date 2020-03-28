@@ -66,7 +66,7 @@ public class iTweenPath : MonoBehaviour
 		if(paths.ContainsKey(requestedName)){
 			return paths[requestedName].nodes.ToArray();
 		}else{
-			Debug.Log("No path with that name (" + requestedName + ") exists! Are you sure you wrote it correctly?");
+			//Debug.Log("No path with that name (" + requestedName + ") exists! Are you sure you wrote it correctly?");
 			return null;
 		}
 	}
@@ -87,7 +87,7 @@ public class iTweenPath : MonoBehaviour
 			revNodes.Reverse();
 			return revNodes.ToArray();
 		}else{
-			Debug.Log("No path with that name (" + requestedName + ") exists! Are you sure you wrote it correctly?");
+			//Debug.Log("No path with that name (" + requestedName + ") exists! Are you sure you wrote it correctly?");
 			return null;
 		}
 	}

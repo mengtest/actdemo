@@ -210,14 +210,13 @@ public class ServerCustom
     //断线重连
     private static void on_rest_net_callback(VarList args)
     {
-        NGUIDebug.Log("收到连接消息，判断是否掉线");
         Game game = Game.Instance;
         if (game != null)
         {
             game.RestTime();
             //if (Time.realtimeSinceStartup - game.mfSendCheckTime < Game.mfIntervalTime)
             //{
-            //    NGUIDebug.Log("收到连接消息，判断是否掉线 RestTime");
+            //    //Debug.Log("收到连接消息，判断是否掉线 RestTime");
             //    game.RestTime();
             //}
         }

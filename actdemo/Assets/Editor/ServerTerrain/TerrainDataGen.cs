@@ -65,14 +65,14 @@ public class TerrainDataGen : EditorWindow
     {
         if (!IsValidPoint(ref center))
         {
-            //Debug.LogWarning("InnerTraceSphere out of range!!!");
+            ////Debug.LogWarning("InnerTraceSphere out of range!!!");
             return false;
         }
 
         RaycastHit hit;
         if (Physics.SphereCast(center, radius, Vector3.one, out hit, radius))
         {
-            //Debug.Log (hit.collider.gameObject);
+            ////Debug.Log (hit.collider.gameObject);
             return true;
         }
 
@@ -97,16 +97,16 @@ public class TerrainDataGen : EditorWindow
     {
         if (!IsValidPoint(ref src) || !IsValidPoint(ref dst))
         {
-            //Debug.LogWarning("InnerTraceHitted out of range!!!");
+            ////Debug.LogWarning("InnerTraceHitted out of range!!!");
             return false;
         }
 
-        //Debug.DrawLine(src, dst,Color.red);
+        ////Debug.DrawLine(src, dst,Color.red);
 
         RaycastHit hit;
         if (Physics.Linecast(src, dst, out hit))
         {
-            //Debug.Log (hit.collider.gameObject);
+            ////Debug.Log (hit.collider.gameObject);
             return true;
         }
 
@@ -131,14 +131,14 @@ public class TerrainDataGen : EditorWindow
     {
         if (!IsValidPoint(ref src) || !IsValidPoint(ref dst))
         {
-            //Debug.LogWarning("InnerTraceDetail out of range!!!");
+            ////Debug.LogWarning("InnerTraceDetail out of range!!!");
             return false;
         }
 
         float dist = Vector3.Distance(src, dst);
         Vector3 origin = dst - src;
 
-        //Debug.DrawRay(src, origin, Color.blue,dist);
+        ////Debug.DrawRay(src, origin, Color.blue,dist);
 
         RaycastHit[] hit = Physics.RaycastAll(src, origin, dist);
 
@@ -146,7 +146,7 @@ public class TerrainDataGen : EditorWindow
         while ((hit_count < hits.Length) && (hit_count < hit.Length))
         {
             hits[hit_count] = hit[hit_count];
-            //Debug.Log(hit);
+            ////Debug.Log(hit);
             hit_count++;
         }
 
@@ -170,7 +170,7 @@ public class TerrainDataGen : EditorWindow
     {
         if (!IsValidX(ref x) || !IsValidZ(ref z))
         {
-            //Debug.LogWarning("InnerGetGroundHeight out of range!!!");
+            ////Debug.LogWarning("InnerGetGroundHeight out of range!!!");
             return 0;
         }
 
@@ -190,7 +190,7 @@ public class TerrainDataGen : EditorWindow
     {
         if (!IsValidX(ref x) || !IsValidZ(ref z))
         {
-            //Debug.LogWarning("InnerGetWaterExists out of range!!!");
+            ////Debug.LogWarning("InnerGetWaterExists out of range!!!");
             return false;
         }
 
@@ -213,7 +213,7 @@ public class TerrainDataGen : EditorWindow
     {
         if (!IsValidX(ref x) || !IsValidZ(ref z))
         {
-            //Debug.LogWarning("InnerGetWaterBaseHeight out of range!!!");
+            ////Debug.LogWarning("InnerGetWaterBaseHeight out of range!!!");
             return 0;
         }
         

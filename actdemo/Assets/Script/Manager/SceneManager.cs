@@ -77,14 +77,14 @@ public class SceneManager : MonoBehaviour
             return;
         }
 
-        sceneGo = NGUITools.AddChild(this.gameObject, sceneGo);
-        if (sceneGo == null)
-        {
-            return;
-        }
+        //sceneGo = NGUITools.AddChild(this.gameObject, sceneGo);
+        //if (sceneGo == null)
+        //{
+        //    return;
+        //}
 
-        sceneGo.name = sceneName;
-        sceneGo.transform.position = Vector3.zero;
+        //sceneGo.name = sceneName;
+        //sceneGo.transform.position = Vector3.zero;
 
         mCurrentSceneName = sceneName;
 

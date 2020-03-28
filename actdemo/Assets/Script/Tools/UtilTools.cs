@@ -974,20 +974,20 @@ public class UtilTools
     /// </summary>
     /// <param name="go"></param>
     /// <returns></returns>
-    public static int CalculateMaxDepth(GameObject go)
-    {
-        int depth = -1;
-        UIWidget[] widgets = go.GetComponentsInChildren<UIWidget>();
-        for (int i = 0, imax = widgets.Length; i < imax; ++i)
-            depth = Mathf.Max(depth, widgets[i].depth);
-        return depth;
-    }
+    //public static int CalculateMaxDepth(GameObject go)
+    //{
+    //    int depth = -1;
+    //    UIWidget[] widgets = go.GetComponentsInChildren<UIWidget>();
+    //    for (int i = 0, imax = widgets.Length; i < imax; ++i)
+    //        depth = Mathf.Max(depth, widgets[i].depth);
+    //    return depth;
+    //}
 
-    public static void AdjustBgTexture(UITexture tex)
-    {
-        //默认分辨率1280*720
+    //public static void AdjustBgTexture(UITexture tex)
+    //{
+    //    //默认分辨率1280*720
 
-    }
+    //}
 
     /// <summary>
     /// 解析json串

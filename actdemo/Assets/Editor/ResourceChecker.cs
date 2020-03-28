@@ -418,10 +418,10 @@ public class ResourceChecker : EditorWindow {
 		ActiveMeshDetails.Clear();
 		
 		Renderer[] renderers = (Renderer[]) FindObjectsOfType(typeof(Renderer));
-		//Debug.Log("Total renderers "+renderers.Length);
+		////Debug.Log("Total renderers "+renderers.Length);
 		foreach (Renderer renderer in renderers)
 		{
-			//Debug.Log("Renderer is "+renderer.name);
+			////Debug.Log("Renderer is "+renderer.name);
 			foreach (Material material in renderer.sharedMaterials)
 			{
 				

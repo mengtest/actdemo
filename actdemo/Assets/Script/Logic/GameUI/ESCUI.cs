@@ -20,11 +20,11 @@ public class ESCUI : MonoBehaviour {
 
     public void OnClickExit () {
         Application.Quit();
-        Debug.Log("exit");
+        //Debug.Log("exit");
 	}
 	
 	public void OnClickRet () {
-        Debug.Log("ret");
+        //Debug.Log("ret");
         recttrans.transform.localPosition = outside;
     }
 

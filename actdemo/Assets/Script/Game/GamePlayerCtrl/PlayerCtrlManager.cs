@@ -10,8 +10,6 @@ public class PlayerCtrlManager : MonoBehaviour
 
 	private float direction;
 
-	private VCAnalogJoystickBase mJoy;
-
     private Transform mDirection;
 
     private RaycastHit hit;
@@ -48,7 +46,7 @@ public class PlayerCtrlManager : MonoBehaviour
             // calculate camera relative direction to move:
             m_CamForward = Vector3.Scale(m_Cam.forward, new Vector3(1, 0, 1)).normalized;
             m_Move = v * m_CamForward + h * m_Cam.right;
-            Debug.Log(m_Move);
+            //Debug.Log(m_Move);
         }
         else
         {
@@ -64,13 +62,13 @@ public class PlayerCtrlManager : MonoBehaviour
 			}
 			else
 			{
-				Debug.LogError("this.gameObject  AnimatorManager == null");
+				//Debug.LogError("this.gameObject  AnimatorManager == null");
 				return;
 			}
 		}
 
-        Debug.Log(m_Move);
-        Debug.Log("h:" + h + "v:" + v);
+        //Debug.Log(m_Move);
+        //Debug.Log("h:" + h + "v:" + v);
 
         if (h != 0.0f || v != 0.0f)
         {

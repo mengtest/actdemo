@@ -61,7 +61,7 @@ public class XmlManager
         {
             ++currentCount;
             //sl.value = (float)currentCount / (float)mCount;
-            //Debug.Log("Loading " + currentCount);
+            ////Debug.Log("Loading " + currentCount);
             //loading.ChangeProgress((float)currentCount / (float)mCount);
         }
 
@@ -93,7 +93,7 @@ public class XmlManager
         if (success)
         {
             ++currentCount;
-            //Debug.Log("Loading " + currentCount);
+            ////Debug.Log("Loading " + currentCount);
             //sl.value = (float)currentCount / (float)mCount;
             //loading.ChangeProgress((float)currentCount / (float)mCount);
         }

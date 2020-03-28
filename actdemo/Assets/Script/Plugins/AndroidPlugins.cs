@@ -35,11 +35,11 @@ public class AndroidPlugins
     /// 初始化Android平台插件
     /// </summary>
     /// <param name="screenOrientation"></param>
-    /// <param name="isDebug"></param>
+    /// <param name="is//Debug"></param>
     /// <param name="isAnysdk"></param>
-    public void InitPlugins(int screenOrientation, bool isDebug, bool isAnysdk)
+    public void InitPlugins(int screenOrientation, bool is//Debug, bool isAnysdk)
     {
-        androidJC.CallStatic("InitPlugins", screenOrientation, isDebug, isAnysdk);
+        androidJC.CallStatic("InitPlugins", screenOrientation, is//Debug, isAnysdk);
     }
 
     /// <summary>

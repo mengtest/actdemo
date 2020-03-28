@@ -218,11 +218,11 @@ public class ServerStateManager
             index++;
 
             string[] dataArray = UtilTools.Split(serverDataStr, '/');
-            LoginUI.ServerInfo info = new LoginUI.ServerInfo();
-            info.mId = int.Parse(dataArray[0]);
-            info.mServerName = dataArray[1];
-            info.mIp = dataArray[2];
-            info.mPort = dataArray[3];
+            //LoginUI.ServerInfo info = new LoginUI.ServerInfo();
+            //info.mId = int.Parse(dataArray[0]);
+            //info.mServerName = dataArray[1];
+            //info.mIp = dataArray[2];
+            //info.mPort = dataArray[3];
             int state = UtilTools.IntParse(dataArray[6]);
             int service = UtilTools.IntParse(dataArray[5]);
 

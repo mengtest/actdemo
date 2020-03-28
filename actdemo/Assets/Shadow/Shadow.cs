@@ -178,7 +178,7 @@ public class Shadow : MonoBehaviour
         }
         else
         {
-            Debug.LogError( "ClearCam is NOT found." );
+            //Debug.LogError( "ClearCam is NOT found." );
         }
     }
 

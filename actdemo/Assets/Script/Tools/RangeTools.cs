@@ -49,10 +49,10 @@ public class RangeTools
 //                Vector3 right = selfPosition + (r * Vector3.right) * width / 2;
 //                Vector3 leftEnd = (left + (r * Vector3.forward) * maxDistance);
 //                Vector3 rightEnd = (right + (r * Vector3.forward) * maxDistance);
-//				Debug.Log("left = "+left);
-//				Debug.Log("right = "+right);
-//				Debug.Log("leftEnd = "+leftEnd);
-//				Debug.Log("rightEnd = "+rightEnd);
+//				//Debug.Log("left = "+left);
+//				//Debug.Log("right = "+right);
+//				//Debug.Log("leftEnd = "+leftEnd);
+//				//Debug.Log("rightEnd = "+rightEnd);
 //			singletonNpcTest.GetSingletonNpcTest().svv[0] = left;
 //			singletonNpcTest.GetSingletonNpcTest().svv[1] = right;
 //			singletonNpcTest.GetSingletonNpcTest().svv[2] = leftEnd;
@@ -61,7 +61,7 @@ public class RangeTools
 //
 //                if (IsInRect(targetPosition, leftEnd, rightEnd, right, left))
 //                {
-//				Debug.Log("============true=================");
+//				//Debug.Log("============true=================");
 //                    isIn = true;
 //                }
 				

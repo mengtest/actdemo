@@ -32,7 +32,7 @@ public class SkillController : StateMachineBehaviour {
 		}
 		else if(stateInfo.IsName("skill_02_c"))
 		{
-			Debug.Log("========================!!");
+			//Debug.Log("========================!!");
 			animator.GetComponent<EffectComponent>().AttackEffect("100008_skill02_c");
 		}
 		else if(stateInfo.IsName("skill_04"))
