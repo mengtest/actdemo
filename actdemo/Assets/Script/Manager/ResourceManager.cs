@@ -131,7 +131,8 @@ public class ResourceManager
             return null;
         }
 
-        return LoadObject(roleId, ResourceDefine.RolePath) as GameObject;
+  //      return LoadObject(roleId, ResourceDefine.RolePath) as GameObject;
+        return GameObject.Instantiate(LoadObject(roleId, ResourceDefine.RolePath)) as GameObject;
     }
 
     public GameObject GetNpcPrefab(string npcId)
