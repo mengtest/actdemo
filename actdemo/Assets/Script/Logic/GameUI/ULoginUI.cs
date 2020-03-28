@@ -21,8 +21,5 @@ public class ULoginUI : MonoBehaviour {
     private void OnClickStart()
     {
         SceneManager.Instance.ChangeScene("TestScene2");
-        Debug.Log("Button Clicked. ClickHandler.");
-        //        gameObject.SetActive(false);
-        //        mGame.SetActive(true);
     }
 }
