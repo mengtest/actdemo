@@ -35,7 +35,7 @@ public class GameMain : MonoBehaviour
         AddComponent("RestoreManager");
 
         // 等待界面管理器
-        AddComponent("WaitingManager");
+        //AddComponent("WaitingManager");
 
         // 对象池
         AddComponent("GameObjectManager");

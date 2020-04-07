@@ -47,7 +47,6 @@ public class iTweenPath : MonoBehaviour
 	void OnDrawGizmosSelected(){
 		if(pathVisible){
 			if(nodes.Count > 0){
-				iTween.DrawPath(nodes.ToArray(), pathColor);
 			}	
 		}
 	}

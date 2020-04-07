@@ -290,10 +290,5 @@ public class EffectManager : MonoBehaviour
         table.Add("oncompletetarget", self.mGameObject);
         table.Add("oncompleteparams", param);
 
-        // 运动轨迹类型
-        table.Add("easetype", iTween.EaseType.linear);
-
-        // go~嗨起来~
-        iTween.MoveTo(go, table);
     }
 }

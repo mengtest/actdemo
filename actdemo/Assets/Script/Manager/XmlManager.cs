@@ -751,7 +751,6 @@ public class XmlManager
                 sms.mTimeScale = UtilTools.FloatParse(child.GetStringValue("TimeScale"));
                 sms.mTime = UtilTools.FloatParse(child.GetStringValue("Time"));
                 sms.mFieldOfView = UtilTools.FloatParse(child.GetStringValue("FieldOfView"));
-                sms.mEaseType = (iTween.EaseType)UtilTools.IntParse(child.GetStringValue("EaseType"));
 
                 smp.mSlowMotionStepList.Add(sms);
             }

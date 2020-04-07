@@ -3,25 +3,25 @@
 public class ResourceDefine
 {
     /// <summary>
-    /// ÓïÑÔÀàÐÍ
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     public enum LanguageType
     {
-        LT_ChineseS = 0,///¼òÌåÖÐÎÄ 
-        LT_ChineseT,///·±ÌåÖÐÎÄ
-        LT_English,///Ó¢ÎÄ
-        LT_Thai,///Ì©Óï
-        LT_Vietnamese,///Ô½ÄÏÎÄ
-        LT_French,///·¨ÎÄ
-        LT_German,///µÂÓï
-        LT_Polish,///²¨À¼Óï
-        LT_Italian,///Òâ´óÀûÓï
-        LT_Turkish,///ÍÁ¶úÆäÓï
-        LT_Russian,///¶íÂÞË¹
-        LT_Korean,///º«Óï
-        LT_Japanese,///ÈÕÓï
-        LT_Portuguese,///ÆÏÌÑÑÀÓï
-        LT_Spanish///Î÷°àÑÀÓï
+        LT_ChineseS = 0,///ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
+        LT_ChineseT,///ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        LT_English,///Ó¢ï¿½ï¿½
+        LT_Thai,///Ì©ï¿½ï¿½
+        LT_Vietnamese,///Ô½ï¿½ï¿½ï¿½ï¿½
+        LT_French,///ï¿½ï¿½ï¿½ï¿½
+        LT_German,///ï¿½ï¿½ï¿½ï¿½
+        LT_Polish,///ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        LT_Italian,///ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        LT_Turkish,///ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        LT_Russian,///ï¿½ï¿½ï¿½ï¿½Ë¹
+        LT_Korean,///ï¿½ï¿½ï¿½ï¿½
+        LT_Japanese,///ï¿½ï¿½ï¿½ï¿½
+        LT_Portuguese,///ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        LT_Spanish///ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     }
 
     public static string LanguagePath = "Language/";
@@ -39,37 +39,37 @@ public class ResourceDefine
     public static string Gongjian = "Model/Gongjian/";
 
     /// <summary>
-    /// ³¡¾°±³¾°ÒôÀÖÂ·¾¶
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½
     /// </summary>
     public static string mSceneBgMusicPath = "Audio/SceneAudio/";
 
     /// <summary>
-    /// UIÒôÐ§Â·¾¶
+    /// UIï¿½ï¿½Ð§Â·ï¿½ï¿½
     /// </summary>
     public static string mUIAudioPath = "Audio/UiAudio/";
 
     /// <summary>
-    /// Õ½¶·ÒôÐ§Â·¾¶
+    /// Õ½ï¿½ï¿½ï¿½ï¿½Ð§Â·ï¿½ï¿½
     /// </summary>
     public static string mBattleAudioPath = "Audio/BattleAudio/";
 
     /// <summary>
-    /// Ó¢ÐÛËµ»°ÒôÐ§Â·¾¶
+    /// Ó¢ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½Ð§Â·ï¿½ï¿½
     /// </summary>
     public static string mHeroSpeakingPath = @"Audio/HeroVocal/";
 
     /// <summary>
-    /// ÐÂÊÖÒýµ¼ÒôÐ§Â·¾¶
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§Â·ï¿½ï¿½
     /// </summary>
     public static string mUserGuideAudioClipPath = @"Audio/UserGuide/";
 
     /// <summary>
-    /// floatStory×¨ÓÃÒôÐ§Â·¾¶
+    /// floatStory×¨ï¿½ï¿½ï¿½ï¿½Ð§Â·ï¿½ï¿½
     /// </summary>
     public static string mStoryAudioClipPath = @"Audio/StoryAudio/";
 
     /// <summary>
-    /// ÌØÊâÒôÐ§
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§
     /// </summary>
     public static string mSpecialAudioClipPath = @"Audio/SpecialAudioClipPath/";
 
@@ -117,89 +117,89 @@ public class ResourceDefine
     public static string ModelPath = "Prefabs/Map/";
     public static string ModelEffectPath = "Prefabs/Effect/ModelEffect/";
     /// <summary>
-    /// µ±Ç°ÓïÑÔ»·¾³
+    /// ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½
     /// </summary>
     private static LanguageType seLanguageType = 0;
     /// <summary>
-    /// ÉèÖÃÓïÑÔ»·¾³
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½
     /// </summary>
-    /// <param name="iType">»·¾³ÀàÐÍ0:ÖÐÎÄ 1:Ó¢ÎÄ 2£º¶íÎÄ</param>
+    /// <param name="iType">ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0:ï¿½ï¿½ï¿½ï¿½ 1:Ó¢ï¿½ï¿½ 2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</param>
     public static void SetLanguage(LanguageType iType)
     {
         seLanguageType = iType;
         switch (seLanguageType)
         {
-            case LanguageType.LT_ChineseS:///¼òÌåÖÐÎÄ 
+            case LanguageType.LT_ChineseS:///ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
                 {
                     LanguagePath = "Language/china/";
                 }
                 break;
-            case LanguageType.LT_ChineseT:///·±ÌåÖÐÎÄ
+            case LanguageType.LT_ChineseT:///ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 {
                     LanguagePath = "Language/chinaT/";
                 }
                 break;
-            case LanguageType.LT_English:///Ó¢ÎÄ
+            case LanguageType.LT_English:///Ó¢ï¿½ï¿½
                 {
                     LanguagePath = "Language/english/";
                 }
                 break;
-            case LanguageType.LT_Thai:///Ì©Óï
+            case LanguageType.LT_Thai:///Ì©ï¿½ï¿½
                 {
                     LanguagePath = "Language/thai/";
                 }
                 break;
-            case LanguageType.LT_Vietnamese:///Ô½ÄÏÎÄ
+            case LanguageType.LT_Vietnamese:///Ô½ï¿½ï¿½ï¿½ï¿½
                 {
                     LanguagePath = "Language/vietnamese/";
                 }
                 break;
-            case LanguageType.LT_French:///·¨ÎÄ
+            case LanguageType.LT_French:///ï¿½ï¿½ï¿½ï¿½
                 {
                     LanguagePath = "Language/french/";
                 }
                 break;
-            case LanguageType.LT_German:///µÂÓï
+            case LanguageType.LT_German:///ï¿½ï¿½ï¿½ï¿½
                 {
                     LanguagePath = "Language/german/";
                 }
                 break;
-            case LanguageType.LT_Polish:///²¨À¼Óï
+            case LanguageType.LT_Polish:///ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 {
                     LanguagePath = "Language/polish/";
                 }
                 break;
-            case LanguageType.LT_Italian:///Òâ´óÀûÓï
+            case LanguageType.LT_Italian:///ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 {
                     LanguagePath = "Language/italian/";
                 }
                 break;
-            case LanguageType.LT_Turkish:///ÍÁ¶úÆäÓï
+            case LanguageType.LT_Turkish:///ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 {
                     LanguagePath = "Language/turkish/";
                 }
                 break;
-            case LanguageType.LT_Russian:///¶íÂÞË¹
+            case LanguageType.LT_Russian:///ï¿½ï¿½ï¿½ï¿½Ë¹
                 {
                     LanguagePath = "Language/russian/";
                 }
                 break;
-            case LanguageType.LT_Korean:///º«Óï
+            case LanguageType.LT_Korean:///ï¿½ï¿½ï¿½ï¿½
                 {
                     LanguagePath = "Language/korean/";
                 }
                 break;
-            case LanguageType.LT_Japanese:///ÈÕÓï
+            case LanguageType.LT_Japanese:///ï¿½ï¿½ï¿½ï¿½
                 {
                     LanguagePath = "Language/japanese/";
                 }
                 break;
-            case LanguageType.LT_Portuguese:///ÆÏÌÑÑÀÓï
+            case LanguageType.LT_Portuguese:///ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 {
                     LanguagePath = "Language/portuguese/";
                 }
                 break;
-            case LanguageType.LT_Spanish:///Î÷°àÑÀÓï
+            case LanguageType.LT_Spanish:///ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 {
                     LanguagePath = "Language/spanish/";
                 }

@@ -122,8 +122,8 @@ public class ExportSceneToObj : EditorWindow
         string terrainName = name;
         float tRes = 2.5f;
         TerrainData terrain = terrainData;
-        int w = terrain.heightmapWidth;
-        int h = terrain.heightmapHeight;
+        int w = terrain.heightmapResolution;
+        int h = terrain.heightmapResolution;
         Vector3 meshScale = terrain.size;
         meshScale = new Vector3(meshScale.x / (h - 1) * tRes, meshScale.y, meshScale.z / (w - 1) * tRes);
         Vector2 uvScale = new Vector2((float)(1.0 / (w - 1)), (float)(1.0 / (h - 1)));

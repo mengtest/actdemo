@@ -78,8 +78,6 @@ public class CameraAnimation : MonoBehaviour
         Hashtable table = new Hashtable();
         table.Add("position", mPathArray[1]);
         table.Add("time", mSlowMotionProperty.mSlowMotionStepList[0].mTime);
-        table.Add("easetype", 
-            mSlowMotionProperty.mSlowMotionStepList[0].mEaseType);
         table.Add("ignoretimescale", true);
         table.Add("onupdate", "FollowBip01");
         table.Add("onupdatetarget", gameObject);
@@ -87,8 +85,6 @@ public class CameraAnimation : MonoBehaviour
         table.Add("oncomplete", "NextCameraAnimation");
         table.Add("oncompletetarget", gameObject);
         table.Add("oncompleteparams", 2);
-
-        iTween.MoveTo(gameObject, table);
 
         GlobalData.TimeScale = mSlowMotionProperty.mSlowMotionStepList[0].mTimeScale;
     }
@@ -114,7 +110,6 @@ public class CameraAnimation : MonoBehaviour
         Hashtable table = new Hashtable();
         table.Add("position", mPathArray[index]);
         table.Add("time", mSlowMotionProperty.mSlowMotionStepList[index - 1].mTime);
-        table.Add("easetype", mSlowMotionProperty.mSlowMotionStepList[index - 1].mEaseType);
         table.Add("ignoretimescale", true);
         table.Add("onupdate", "FollowBip01");
         table.Add("onupdatetarget", gameObject);
@@ -123,7 +118,6 @@ public class CameraAnimation : MonoBehaviour
         table.Add("oncompletetarget", gameObject);
         table.Add("oncompleteparams", ++index);
 
-        iTween.MoveTo(gameObject, table);
     }
 
     void AnimationOver()

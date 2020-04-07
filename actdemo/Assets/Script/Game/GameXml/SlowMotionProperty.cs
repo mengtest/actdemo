@@ -14,5 +14,4 @@ public class SlowMotionStep
     public float mTimeScale;
     public float mTime;
     public float mFieldOfView;
-    public iTween.EaseType mEaseType;
 }
